@@ -5,9 +5,13 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
-h1{
+h1,h2,h3{
   font-family: "Dosis", sans-serif;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-align: center;
 }
 
 h4,
@@ -19,5 +23,48 @@ p {
 
   /* Steven */
   /* Edwar */
+
   /* Daniela */
+
+  /* Inicio Grafica Lineal */
+
+  /* Fin Grafica Lineal */
+
+  /* Inicio TortasDani */
+  #tortasDani{
+    margin: 0%;
+    padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .contenedorPorcentajesD{
+    display: flex;
+  background: aqua;
+  max-width: 100%;
+  height: 20px;
+  }
+  .contenedorTortaD{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+  }
+
+  div.contenedorCD{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100px;
+    height: 100px;
+    background: gray;
+    border-radius: 50%;
+  }
+
+  #tortasDani.div.textoIntD{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+  }
+  /* Fin TortasDani */
 }
