@@ -41,6 +41,7 @@ p {
     border: 3px solid #ffffff;
     border-radius: 2.5rem;
   }
+
   /* Sección Búsqueda */
   .search {
     width: 30%;
@@ -96,29 +97,30 @@ p {
     background: #000000;
     z-index: 1;
   }
-  /* Sección Usuario */
+
+    /* Sección Usuario */
   .containerHeader > .user {
     width: 20%;
     height: 35px;
     border-radius: 3rem;
-    background-color: #b9b9b9;
+    background-color: #B9B9B9;
   }
 
   /* Icono de usuario */
-   .user > .iconUserHead {
+  .user > .iconUserHead {
     width: 25%;
     height: 45%;
     margin: 4px auto;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
   }
 
-  .user > .iconUserBody {
+  .user > .iconUserBody{
     width: 40%;
     height: 30%;
     margin: 0 auto;
     border-radius: 50% 50% 0 0;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
   }
   /* Edwar */
   /* Daniela */
