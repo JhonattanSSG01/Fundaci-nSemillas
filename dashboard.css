@@ -115,7 +115,7 @@ p {
     background-color: #FFFFFF;
   }
 
-  .user > .iconUserBody{
+  .user > .iconUserBody {
     width: 40%;
     height: 30%;
     margin: 0 auto;
@@ -124,8 +124,8 @@ p {
   }
 
   /* Main */
-  /* Seccion Information */
-  .welcome{
+  /* Seccion Bienvenida */
+  .welcome {
     width: 100%;
     margin: 25px 0;
     padding: 10px 0;
@@ -134,7 +134,7 @@ p {
     align-items: center;
   }
 
-  .welcome > .photoStudent{
+  .welcome > .photoStudent {
     width: 30%;
     padding: 0.8rem;
     margin: 0 auto;
@@ -142,25 +142,45 @@ p {
     background-color: #009458;
   }
 
-  .welcome > .photoStudent > img{
+  .welcome > .photoStudent > img {
     border-radius: 50%;
     background-color: #B9B9B9;
   }
 
-  .welcome > .description{
+  .welcome > .description {
     width: 95%;
     padding: 8px;
   }
 
-  .description > h2{
+  .description > h2 {
     font-size: 35px;
     text-transform: capitalize;
     text-align: center;
   }
-  
-  .description > p{
+
+  .description > p {
     font-size: 15px;
     text-align: justify;
+  }
+
+  /* Sección Diplomados */
+  .agreeContainer {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .agreeContainer > .agree{
+    width: 80%;
+    height: 400px;
+    margin: 10px 0;
+    border: 5px solid #009458;
+    border-radius: 2rem;
+  }
+  .agreeContainer > .active{
+    border: 5px solid #000000;
   }
 
   /* Edwar */
