@@ -96,6 +96,30 @@ p {
     background: #000000;
     z-index: 1;
   }
+  /* Sección Usuario */
+  .containerHeader > .user {
+    width: 20%;
+    height: 35px;
+    border-radius: 3rem;
+    background-color: #b9b9b9;
+  }
+
+  /* Icono de usuario */
+   .user > .iconUserHead {
+    width: 25%;
+    height: 45%;
+    margin: 4px auto;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  .user > .iconUserBody {
+    width: 40%;
+    height: 30%;
+    margin: 0 auto;
+    border-radius: 50% 50% 0 0;
+    background-color: #ffffff;
+  }
   /* Edwar */
   /* Daniela */
 }
