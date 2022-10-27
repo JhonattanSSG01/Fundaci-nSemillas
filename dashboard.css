@@ -8,6 +8,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 h1,
 h2,
 h3 {
@@ -17,6 +18,8 @@ h3 {
 h4,
 p {
   font-family: "Playfair Display", serif;
+  display: grid;
+  
 }
 
 /* Responsive para Mobile */
@@ -24,7 +27,7 @@ p {
   /* Steven */
   /* Header */
   .containerHeader {
-    width: 92%;
+    max-width: 100%;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -45,17 +48,16 @@ p {
   /* Sección Búsqueda */
   .search {
     width: 30%;
-    margin: 0 auto;
+    
   }
 
   .containerHeader > .search > .iconSearch > input {
     width: 70%;
-    padding: 0.8rem 0 0.8rem 3rem;
+    padding: 0.8rem 0 0.8rem 2.5rem;
     border: none;
     border-radius: 3rem;
     text-transform: capitalize;
     font-family: "Playfair Display", serif;
-    margin: 0 auto;
   }
 
   /* Icono de lupa */
@@ -91,7 +93,7 @@ p {
     height: 5px;
     transform: rotate(45deg);
     position: absolute;
-    bottom: 10px;
+    bottom: 11px;
     left: 22px;
     border-radius: 3rem 0 0 3rem;
     background: #000000;
@@ -127,7 +129,7 @@ p {
   /* Main */
   /* Seccion Bienvenida */
   .welcome {
-    width: 100%;
+    max-width: 100%;
     margin: 25px 0;
     padding: 10px 0;
     display: flex;
@@ -167,14 +169,14 @@ p {
   /* Sección Diplomados */
   /* Contenedor */
   .agreeContainer {
-    width: 95%;
+    max-width: 100%;
     padding: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .agreeContainer > a{
+  .agreeContainer > a {
     text-decoration: none;
   }
 
@@ -205,13 +207,108 @@ p {
   }
 
   .agree > h3 {
+    text-transform: capitalize;
     line-height: 25px;
+  }
+  .agree > h3 > span {
+    text-transform: uppercase;
   }
 
   .agree > p {
     width: 80%;
     margin: 0 auto;
     text-align: justify;
+  }
+
+  /* Sección gráfica media luna */
+  /* Título y descripcián de la gráfica */
+  .stateOfMind {
+    max-width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+  }
+
+  .stateOfMind > .titleState > h1 {
+    font-size: 30px;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  .stateOfMind > .titleState > h3 {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 150%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  /* Gráfica media luna */
+  .graphContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+
+  .graphContainer > .graphCircle {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    margin: 15px auto;
+    border-radius: 50%;
+  }
+  
+  .graphContainer > .happy {
+    background: linear-gradient(125deg, #FF8A00 50%, #000000 50%);
+  }
+  .graphContainer > .indifferent {
+    background: linear-gradient(90deg, #FF0000 50%, #000000 50%);
+  }
+  .graphContainer > .sad {
+    background: linear-gradient(45deg, #001AFF 50%, #000000 50%);
+  }
+
+  .graphCircle > .circle {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+  }
+
+  .graphCircle > .circleOuter {
+    padding: 1em;
+    box-sizing: border-box;
+    background: #ffffff content-box;
+  }
+
+  .graphCircle > .circleInner {
+    background: linear-gradient(transparent 50%, #FFFFFF 50%);
+    transform: scale(1.1);
+  }
+
+  .graphCircle > .circleInner > h3 {
+    margin-top: 3.2rem;
+    font-size: 18px;
+    text-transform: capitalize;
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
   /* Edwar */
