@@ -34,6 +34,11 @@ p {
   #linealDani{
     display: flex;
     flex-direction: column;
+
+  }
+  #linealDani .tituloGrafica{
+    margin-top: 5%;
+    margin-bottom:5%;
   }
   #verticalD{
     display: flex;
@@ -48,6 +53,28 @@ p {
     justify-content: left;
     margin-left: 5%;
   }
+  .espacioGraficaD{
+    display: flex;
+    flex-direction: row;
+
+  }
+.contentD{
+  display: flex;
+  flex-direction: row;
+  background: #FF0C0C;
+  margin-left: 8.5%;
+}
+.Mes{
+
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.cambio{
+  width: 46px;
+  background: gray;
+}
   .carita{
     width: 25px;
     height:25px;
@@ -59,17 +86,7 @@ p {
   width: 25px;
   height:25px;
 }
-#textoHorizontalD{
-  display: flex;
-  flex-direction: row;
-  border-top-style: solid;
-  border-width: 1px;
-  margin-left: 20%;
-  margin-right: 10%;
-  max-width: 100%;
-  justify-content: space-between;
 
-}
 #textoHorizontalD{
   display: flex;
   flex-direction: row;
