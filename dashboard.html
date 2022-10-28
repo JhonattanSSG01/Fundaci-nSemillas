@@ -23,32 +23,8 @@
 
 <body>
   <!-- Steven -->
-  <!-- Start Header -->
-  <header>
-    <div class="containerHeader">
-      <!-- Sección menú hamburguesa -->
-      <section class="icon">
-        <hr>
-        <hr>
-        <hr>
-      </section>
-      <!-- Sección campo de búsqueda -->
-      <section class="search">
-        <section class="iconSearch">
-          <div class="circle">
-            <div class="circleWhite"></div>
-          </div>
-          <div class="line"></div>
-          <input type="text" placeholder="search">
-        </section>
-      </section>
-      <!-- Sección de usuario -->
-      <section class="user">
-        <section class="iconUserHead"></section>
-        <section class="iconUserBody"></section>
-      </section>
-    </div>
-    <div class="navContainer">
+  <div class="flexLeft">
+    <div class="slideBar">
       <section class="logo">
         <img src="./Semillas/logoSWhite.png" width="100%" alt="Imagen del estudiante">
       </section>
@@ -94,110 +70,141 @@
         <a href="">cerrar sesión</a>
       </section>
     </div>
+    <div class="flexRight">
+      <!-- Start Header -->
+      <header>
+        <div class="containerHeader">
+          <!-- Sección menú hamburguesa -->
+          <section class="icon">
+            <hr>
+            <hr>
+            <hr>
+          </section>
+          <!-- Sección campo de búsqueda -->
+          <section class="search">
+            <section class="iconSearch">
+              <div class="circle">
+                <div class="circleWhite"></div>
+              </div>
+              <div class="line"></div>
+              <input type="text" placeholder="search">
+            </section>
+          </section>
+          <!-- Sección de usuario -->
+          <section class="userFlex">
+            <section class="user">
+              <section class="iconUserHead"></section>
+              <section class="iconUserBody"></section>
+            </section>
+            <h3>Administrador</h3>
+          </section>
+        </div>
+      </header>
+      <!-- End Header -->
     
-    <!-- End Header -->
-  </header>
-
-  <!-- Start Main -->
-  <main>
-    <!-- Start Sección Bienvenida -->
-    <div class="welcome">
-      <!-- Seccion de foto del estudiante -->
-      <section class="photoStudent">
-        <img src="./Semillas/logoSBlack_1.svg" alt="Imagen del estudiante">
-      </section>
-      <!-- Seccion de la descripción de Bienvenida -->
-      <section class="description">
-        <h2>bienvenido administrador</h2>
-        <p>
-          Bienvenido Administrador estás viendo los Indicadores Emocionales del estudiante Daniel Larusso en relación
-          con cada diplomado.
-        </p>
-      </section>
-    </div>
-    <!-- End Sección Bienvenida -->
-
-    <!-- Start Sección Diplomados -->
-    <div class="agreeContainer">
-      <!-- Seccion primera tarjeta -->
-      <a href="">
-        <div class="agree active">
-          <h2>botánica</h2>
-          <img src="./Semillas/botanica.jpg" width="100" height="100" alt="Imagen alusiva a la botanica">
-          <h3>profesor: señor miyagui</h3>
-          <h3>horario: 9:00 am - 11:00 am <br><span>martes y jueves</span></h3>
-          <p>
-            Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere al
-            equilibrio de
-            una especie con los recursos de su entorno.
-          </p>
-        </div>
-      </a>
-      <!-- Seccion segunda tarjeta -->
-      <a href="">
-        <div class="agree">
-          <h2>sostenibilidad ambiental</h2>
-          <img src="./Semillas/sostenibilidad.jpg" width="100" height="100"
-            alt="Imagen alusiva a la sostenibilidad ambiental">
-          <h3>profesor: terry silver</h3>
-          <h3>horario: 9:00 am - 11:00 am <br><span>lunes y viernes</span></h3>
-          <p>
-            Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere al
-            equilibrio de
-            una especie con los recursos de su entorno.
-          </p>
-        </div>
-      </a>
-      <!-- Seccion tercera tarjeta -->
-      <a href="">
-        <div class="agree">
-          <h2>química</h2>
-          <img src="./Semillas/quimica.jpg" width="100" height="100" alt="Imagen alusiva a la quimica">
-          <h3>profesor: jhon kreese</h3>
-          <h3>horario: 9:00 am - 11:00 am <br><span>martes y jueves</span></h3>
-          <p>
-            Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere al
-            equilibrio de
-            una especie con los recursos de su entorno.
-          </p>
-        </div>
-      </a>
-    </div>
-    <!-- End Sección Diplomados -->
-
-    <!-- Strat sección gráfica media luna -->
-    <div class="stateOfMind">
-      <section class="titleState">
-        <h1>Indicador de Estado de ánimo por actividad</h1>
-        <h3>
-          Este indicador permite saber del total de actividades cuan feliz, indiferente o triste se ha sentido el
-          estudiante.
-        </h3>
-      </section>
-      <div class="graphContainer">
-        <section class="graphCircle happy">
-          <section class="circle circleOuter"></section>
-          <section class="circle circleInner">
-            <h3>feliz<br>70%</h3>
+      <!-- Start Main -->
+      <main>
+        <!-- Start Sección Bienvenida -->
+        <div class="welcome">
+          <!-- Seccion de foto del estudiante -->
+          <section class="photoStudent">
+            <img src="./Semillas/logoSBlack_1.svg" alt="Imagen del estudiante">
           </section>
-        </section>
-        <section class="graphCircle indifferent">
-          <section class="circle circleOuter"></section>
-          <section class="circle circleInner">
-            <h3>indiferente<br>50%</h3>
+          <!-- Seccion de la descripción de Bienvenida -->
+          <section class="description">
+            <h2>bienvenido administrador</h2>
+            <p>
+              Bienvenido Administrador estás viendo los Indicadores Emocionales del estudiante Daniel Larusso en relación
+              con cada diplomado.
+            </p>
           </section>
-        </section>
-        <section class="graphCircle sad">
-          <section class="circle circleOuter"></section>
-          <section class="circle circleInner">
-            <h3>triste<br>20%</h3>
+        </div>
+        <!-- End Sección Bienvenida -->
+    
+        <!-- Start Sección Diplomados -->
+        <div class="agreeContainer">
+          <!-- Seccion primera tarjeta -->
+          <a href="">
+            <div class="agree active">
+              <h2>botánica</h2>
+              <img src="./Semillas/botanica.jpg" width="100" height="100" alt="Imagen alusiva a la botanica">
+              <h3>profesor: señor miyagui</h3>
+              <h3>horario: 9:00 am - 11:00 am <br><span>martes y jueves</span></h3>
+              <p>
+                Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere al
+                equilibrio de
+                una especie con los recursos de su entorno.
+              </p>
+            </div>
+          </a>
+          <!-- Seccion segunda tarjeta -->
+          <a href="">
+            <div class="agree">
+              <h2>sostenibilidad ambiental</h2>
+              <img src="./Semillas/sostenibilidad.jpg" width="100" height="100"
+                alt="Imagen alusiva a la sostenibilidad ambiental">
+              <h3>profesor: terry silver</h3>
+              <h3>horario: 9:00 am - 11:00 am <br><span>lunes y viernes</span></h3>
+              <p>
+                Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere al
+                equilibrio de
+                una especie con los recursos de su entorno.
+              </p>
+            </div>
+          </a>
+          <!-- Seccion tercera tarjeta -->
+          <a href="">
+            <div class="agree">
+              <h2>química</h2>
+              <img src="./Semillas/quimica.jpg" width="100" height="100" alt="Imagen alusiva a la quimica">
+              <h3>profesor: jhon kreese</h3>
+              <h3>horario: 9:00 am - 11:00 am <br><span>martes y jueves</span></h3>
+              <p>
+                Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere al
+                equilibrio de
+                una especie con los recursos de su entorno.
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- End Sección Diplomados -->
+    
+        <!-- Strat sección gráfica media luna -->
+        <div class="stateOfMind">
+          <section class="titleState">
+            <h1>Indicador de Estado de ánimo por actividad</h1>
+            <h3>
+              Este indicador permite saber del total de actividades cuan feliz, indiferente o triste se ha sentido el
+              estudiante.
+            </h3>
           </section>
-        </section>
-      </div>
+          <div class="graphContainer">
+            <section class="graphCircle happy">
+              <section class="circle circleOuter"></section>
+              <section class="circle circleInner">
+                <h3>feliz<br>70%</h3>
+              </section>
+            </section>
+            <section class="graphCircle indifferent">
+              <section class="circle circleOuter"></section>
+              <section class="circle circleInner">
+                <h3>indiferente<br>50%</h3>
+              </section>
+            </section>
+            <section class="graphCircle sad">
+              <section class="circle circleOuter"></section>
+              <section class="circle circleInner">
+                <h3>triste<br>20%</h3>
+              </section>
+            </section>
+          </div>
+        </div>
+        <!-- End sección gráfica media luna -->
+      </main>
+      <!-- End Main -->
+
     </div>
-    <!-- End sección gráfica media luna -->
-  </main>
-  <!-- End Main -->
+  </div>
   <!-- Edwar -->
   <!-- Daniela -->
 </body>

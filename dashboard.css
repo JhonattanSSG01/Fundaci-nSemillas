@@ -21,42 +21,46 @@ p {
   display: grid;
 }
 /* Responsive para Tablet */
-@media only screen and (max-width: 1024px) and (min-width: 420px) {
+@media only screen and (max-width: 1024px) and (min-width: 479px) {
   /* Steven */
   /* Header */
-  header{
-    display: flex;
-    flex-direction: row-reverse;
+ main {
+  padding: 1rem;
+ }
+
+  .flexLeft > .slideBar {
+    position: fixed;
+    width: 30%;
+    padding: 0 2%;
+    min-height: 100vh;
+    background-color: #69bf97;
   }
+
+  .flexRight{
+    width: 66%;
+    position: absolute;
+    right: 0;
+  }
+
   .containerHeader {
-    width: 70%;
-    height: 40px;
+    max-width: 100vw;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #009458;
   }
-  .navContainer {
-    width: 30%;
-    height: 100%;
-    padding: 1rem;
-    background-color: #69bf97;
-  }
   /* Menú Hamburguesa */
   .icon {
     display: none;
   } 
   /* Sección Búsqueda */
-  .search {
-    width: 30%;
-  }
-
   .containerHeader > .search > .iconSearch > input {
-    width: 70%;
-    padding: 0.8rem 0 0.8rem 2.5rem;
+    width: 60%;
+    padding: 0.5rem 0 0.5rem 2.5rem;
     border: none;
     border-radius: 3rem;
+    font-size: 1.3rem;
     text-transform: capitalize;
     font-family: "Playfair Display", serif;
   }
@@ -65,18 +69,18 @@ p {
   .search > .iconSearch {
     width: 100%;
     height: 100%;
-    position: relative;
     margin: 0 auto;
+    position: relative;
   }
 
   .iconSearch > .circle {
-    width: 15px;
-    height: 15px;
-    padding: 4px;
+    width: 1rem;
+    height: 1rem;
+    padding: .2rem;
     border-radius: 50%;
     position: absolute;
-    top: 8px;
-    left: 6px;
+    top: .5rem;
+    left: .3rem;
     background: #000000;
     z-index: 3;
   }
@@ -84,50 +88,59 @@ p {
   .iconSearch > .circle > .circleWhite {
     width: 100%;
     height: 100%;
-    background: #ffffff;
     border-radius: 50%;
+    background: #ffffff;
     z-index: 2;
   }
 
   .iconSearch > .line {
-    width: 12px;
-    height: 5px;
-    transform: rotate(45deg);
-    position: absolute;
-    bottom: 11px;
-    left: 22px;
+    width: .7rem;
+    height: .3rem;
     border-radius: 3rem 0 0 3rem;
+    position: absolute;
+    bottom: .7rem;
+    left: 1.4rem;
     background: #000000;
+    transform: rotate(45deg);
     z-index: 1;
   }
 
   /* Sección Usuario */
-  .containerHeader > .user {
-    width: 65px;
-    height: 35px;
-    padding: 4px;
+  .containerHeader > .userFlex {
+    width: 11rem;
+    height: 2.2rem;
+    padding: .3rem;
     border-radius: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: rgba(245, 245, 245, 0.5);
   }
 
   /* Icono de usuario */
+  .userFlex > .user {
+    margin: 0 5px;
+  }
+
   .user > .iconUserHead {
-    width: 25%;
-    height: 45%;
-    margin: 3px auto;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 .3rem;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
   }
 
   .user > .iconUserBody {
-    width: 40%;
-    height: 30%;
-    margin: 0 auto;
+    width: 1.8rem;
+    height: .7rem;
+    margin: .2rem 0;
     border-radius: 50% 50% 0 0;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
   }
 
-  .navContainer > .logo {
+  /* Menu lateral */
+  /* Logo */
+  .slideBar > .logo {
     width: 50%;
     margin: 1.5rem auto;
     padding: 0.8rem;
@@ -135,53 +148,62 @@ p {
     background-color: #009458;
   }
 
-  .navContainer > hr {
+  .slideBar > hr {
     border-color: #000000;
   }
-
-  .navContainer > .menu > ul{
+  /* Lista de opcines */
+  .slideBar > .menu > ul{
     padding: 0;
   }
-  .navContainer > .menu > ul > li,
+
   .menu > ul > li > a{
-    color: #000000;
-    text-decoration: none;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
+    color: #000000;
+    text-decoration: none;
   }
+
+  /* Opción activada */
   .menu > ul > .active{
     border: 2px solid #009458;
-    border-radius: 20px;
+    border-radius: 1.3rem;
   }
+
   .menu > ul > li{
+    list-style: none;
     margin: 3rem 0;
     padding: 0.5rem;
   }
 
-  .menu > ul > li > a > .photoStudent {
-    width: 50px;
-    height: 50px;
-    padding: 0.3rem;
+  .menu > ul > li > a > .photoStudent,
+  .photoStudent > img  {
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
+  }
+
+  .photoStudent {
+    padding: 0.2rem;
     background-color: #d9d9d9;
   }
+
   .photoStudent > img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
     vertical-align: middle;
   }
+  
   .menu .nameStudent {
     padding-left: 0.3rem;
-    font-size: 12px;
+    font-size: clamp(.78rem, 1vw, 2rem);
     line-height: 20px;
   }
+
   .nameStudent > h3,
   .nameStudent > h4 {
     margin: 2px 0;
     text-transform: capitalize;
   }
+
+  /* Boton de cerrar sesión */
   .logOut > a {
     font-size: 20px;
     font-weight: 600;
@@ -197,15 +219,44 @@ p {
     padding: 0.8rem;
     text-align: center;
     border-radius: 50px;
-    background-color: #000000;
+    background-color: #009458;
   }
   .welcome {
-    width: 60%;
+    width: 100%;
     margin: 25px 0;
     padding: 10px 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+  }
+
+  .welcome > .photoStudent {
+    width: 30%;
+    padding: 0.8rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #009458;
+  }
+
+  .welcome > .photoStudent > img {
+    border-radius: 50%;
+    background-color: #b9b9b9;
+  }
+
+  .welcome > .description {
+    width: 80%;
+    padding: 8px;
+  }
+
+  .description > h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .description > p {
+    font-size: 20px;
+    text-align: justify;
   }
 }
 
@@ -213,6 +264,10 @@ p {
 @media only screen and (max-width: 480px) {
   /* Steven */
   /* Header */
+  .slideBar {
+    display: none;
+  }
+  
   .containerHeader {
     max-width: 100%;
     padding: 1rem;
@@ -233,12 +288,8 @@ p {
   }
 
   /* Sección Búsqueda */
-  .search {
-    width: 30%;
-  }
-
   .containerHeader > .search > .iconSearch > input {
-    width: 70%;
+    width: 60%;
     padding: 0.8rem 0 0.8rem 2.5rem;
     border: none;
     border-radius: 3rem;
@@ -285,9 +336,14 @@ p {
     background: #000000;
     z-index: 1;
   }
+  
 
   /* Sección Usuario */
-  .containerHeader > .user {
+  .userFlex > h3 {
+    display: none;
+  }
+
+  .containerHeader > .userFlex {
     width: 65px;
     height: 35px;
     padding: 4px;
@@ -297,19 +353,19 @@ p {
 
   /* Icono de usuario */
   .user > .iconUserHead {
-    width: 25%;
-    height: 45%;
-    margin: 3px auto;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: auto;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
   }
 
   .user > .iconUserBody {
-    width: 40%;
-    height: 30%;
-    margin: 0 auto;
+    width: 1.8rem;
+    height: .7rem;
+    margin: .2rem auto;
     border-radius: 50% 50% 0 0;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
   }
 
   /* Main */
