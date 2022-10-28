@@ -19,7 +19,194 @@ h4,
 p {
   font-family: "Playfair Display", serif;
   display: grid;
-  
+}
+/* Responsive para Tablet */
+@media only screen and (max-width: 1024px) and (min-width: 420px) {
+  /* Steven */
+  /* Header */
+  header{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .containerHeader {
+    width: 70%;
+    height: 40px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #009458;
+  }
+  .navContainer {
+    width: 30%;
+    height: 100%;
+    padding: 1rem;
+    background-color: #69bf97;
+  }
+  /* Menú Hamburguesa */
+  .icon {
+    display: none;
+  } 
+  /* Sección Búsqueda */
+  .search {
+    width: 30%;
+  }
+
+  .containerHeader > .search > .iconSearch > input {
+    width: 70%;
+    padding: 0.8rem 0 0.8rem 2.5rem;
+    border: none;
+    border-radius: 3rem;
+    text-transform: capitalize;
+    font-family: "Playfair Display", serif;
+  }
+
+  /* Icono de lupa */
+  .search > .iconSearch {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .iconSearch > .circle {
+    width: 15px;
+    height: 15px;
+    padding: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    background: #000000;
+    z-index: 3;
+  }
+
+  .iconSearch > .circle > .circleWhite {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .iconSearch > .line {
+    width: 12px;
+    height: 5px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 11px;
+    left: 22px;
+    border-radius: 3rem 0 0 3rem;
+    background: #000000;
+    z-index: 1;
+  }
+
+  /* Sección Usuario */
+  .containerHeader > .user {
+    width: 65px;
+    height: 35px;
+    padding: 4px;
+    border-radius: 3rem;
+    background-color: rgba(245, 245, 245, 0.5);
+  }
+
+  /* Icono de usuario */
+  .user > .iconUserHead {
+    width: 25%;
+    height: 45%;
+    margin: 3px auto;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  .user > .iconUserBody {
+    width: 40%;
+    height: 30%;
+    margin: 0 auto;
+    border-radius: 50% 50% 0 0;
+    background-color: #ffffff;
+  }
+
+  .navContainer > .logo {
+    width: 50%;
+    margin: 1.5rem auto;
+    padding: 0.8rem;
+    border-radius: 50%;
+    background-color: #009458;
+  }
+
+  .navContainer > hr {
+    border-color: #000000;
+  }
+
+  .navContainer > .menu > ul{
+    padding: 0;
+  }
+  .navContainer > .menu > ul > li,
+  .menu > ul > li > a{
+    color: #000000;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu > ul > .active{
+    border: 2px solid #009458;
+    border-radius: 20px;
+  }
+  .menu > ul > li{
+    margin: 3rem 0;
+    padding: 0.5rem;
+  }
+
+  .menu > ul > li > a > .photoStudent {
+    width: 50px;
+    height: 50px;
+    padding: 0.3rem;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+  }
+  .photoStudent > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  .menu .nameStudent {
+    padding-left: 0.3rem;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .nameStudent > h3,
+  .nameStudent > h4 {
+    margin: 2px 0;
+    text-transform: capitalize;
+  }
+  .logOut > a {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Dosis", sans-serif;
+    
+  }
+  .logOut {
+    width: 70%;
+    margin: auto;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #000000;
+  }
+  .welcome {
+    width: 60%;
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
 
 /* Responsive para Mobile */
@@ -48,7 +235,6 @@ p {
   /* Sección Búsqueda */
   .search {
     width: 30%;
-    
   }
 
   .containerHeader > .search > .iconSearch > input {
@@ -234,7 +420,7 @@ p {
     animation-duration: 3s;
     animation-name: slidein;
   }
-  
+
   .stateOfMind > .titleState > h3 {
     padding: 20px;
     font-size: 20px;
@@ -243,14 +429,13 @@ p {
     animation-duration: 1s;
     animation-name: slidein;
   }
-  
-  
+
   @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 150%
+      width: 100%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -262,7 +447,6 @@ p {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-  
   }
 
   .graphContainer > .graphCircle {
@@ -272,15 +456,15 @@ p {
     margin: 15px auto;
     border-radius: 50%;
   }
-  
+
   .graphContainer > .happy {
-    background: linear-gradient(125deg, #FF8A00 50%, #000000 50%);
+    background: linear-gradient(125deg, #ff8a00 50%, #000000 50%);
   }
   .graphContainer > .indifferent {
-    background: linear-gradient(90deg, #FF0000 50%, #000000 50%);
+    background: linear-gradient(90deg, #ff0000 50%, #000000 50%);
   }
   .graphContainer > .sad {
-    background: linear-gradient(45deg, #001AFF 50%, #000000 50%);
+    background: linear-gradient(45deg, #001aff 50%, #000000 50%);
   }
 
   .graphCircle > .circle {
@@ -299,7 +483,7 @@ p {
   }
 
   .graphCircle > .circleInner {
-    background: linear-gradient(transparent 50%, #FFFFFF 50%);
+    background: linear-gradient(transparent 50%, #ffffff 50%);
     transform: scale(1.1);
   }
 
