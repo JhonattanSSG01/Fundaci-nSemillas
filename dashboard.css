@@ -534,7 +534,40 @@ header {
   }
 }
 
+/* Responsive para Tablet Grande*/
+@media only screen and (min-width: 744px) {
+  .flexRight {
+    width: 71%;
+  }
 
+  .flexLeft > .slideBar {
+    width: 25%;
+  }
+
+  .menu .nameStudent {
+    padding-left: 0.3rem;
+    text-align: center;
+    text-align: left;
+  }
+
+  .logOut > a {
+    font-size: 1.2rem;
+  }
+
+  .welcome {
+    flex-direction: row-reverse;
+  }
+  /* Sección Diplomados */
+  /* Contenedor */
+  .agreeContainer > a > .agree {
+    width: 22rem;
+  }
+
+  .graphContainer {
+    padding: 50px 0;
+    flex-direction: row;
+  }
+}
 
 /* Edwar */
 /* Daniela */
