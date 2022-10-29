@@ -569,5 +569,20 @@ header {
   }
 }
 
+/* Responsive para Laptop */
+@media only screen and (min-width: 744px) {
+  .flexLeft > .slideBar {
+    width: 22%;
+  }
+
+  .flexRight {
+    width: 74%;
+  }
+
+  .menu .nameStudent {
+    line-height: 25px;
+  }
+}
+
 /* Edwar */
 /* Daniela */
