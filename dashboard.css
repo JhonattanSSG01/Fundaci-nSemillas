@@ -584,5 +584,93 @@ header {
   }
 }
 
+/* Responsive para Desktop */
+@media only screen and (min-width: 1440px) {
+  main {
+    padding: 2rem;
+  }
+
+  .flexLeft > .slideBar {
+    width: 18%;
+  }
+
+  .flexRight {
+    width: 78%;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .containerHeader > .userFlex {
+    width: 20rem;
+  }
+
+  .userFlex > h3 {
+    font-size: 25px;
+  }
+
+  .welcome > .photoStudent {
+    width: auto;
+  }
+
+  .welcome > .photoStudent > img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .welcome > .description {
+    width: 60%;
+    padding: 8px 30px;
+  }
+
+  .description > h2,
+  .stateOfMind > .titleState > h1 {
+    font-size: 3rem;
+  }
+
+  .description > p,
+  .stateOfMind > .titleState > h4 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .agreeContainer {
+    margin: 35px 0;
+    padding: 35px 0;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .agreeContainer > a > .agree {
+    width: 23rem;
+    margin: 0 35px;
+  }
+
+  .agree > h2 {
+    font-size: 28px;
+  }
+
+  .agree > h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .agree > p {
+    font-size: 22px;
+  }
+
+  .graphContainer > .graphCircle,
+  .graphCircle > .circle {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .graphCircle > .circleInner > h3 {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+}
 /* Edwar */
 /* Daniela */
