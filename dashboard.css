@@ -152,7 +152,7 @@ header {
 }
 
 .welcome > .photoStudent {
-  width: 30%;
+  width: auto;
   padding: 0.8rem;
   margin: 0 auto;
   border-radius: 50%;
@@ -160,6 +160,8 @@ header {
 }
 
 .welcome > .photoStudent > img {
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -442,7 +444,7 @@ header {
 
   .photoStudent {
     padding: 0.25rem;
-    background-color: #d9d9d9;
+    background-color: #D9D9D9;
   }
 
   .menu .nameStudent {
@@ -477,7 +479,7 @@ header {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: "Dosis", sans-serif;
   }
 
@@ -486,19 +488,16 @@ header {
   }
 
   .welcome > .photoStudent,
-  .welcome > .description,
-  .agreeContainer > a > .agree {
+  .welcome > .description {
     width: auto;
   }
 
-  .welcome > .photoStudent > img {
-    width: 6rem;
-    height: 6rem;
+  .agreeContainer > a > .agree {
+    width: 85%;
   }
 
   .description > h2 {
     font-size: 1.8rem;
-    text-align: left;
   }
 
   .description > p {
@@ -557,6 +556,10 @@ header {
   .welcome {
     flex-direction: row-reverse;
   }
+
+  .description > h2 {
+    text-align: center;
+  }
   /* Sección Diplomados */
   /* Contenedor */
   .agreeContainer > a > .agree {
@@ -570,7 +573,7 @@ header {
 }
 
 /* Responsive para Laptop */
-@media only screen and (min-width: 744px) {
+@media only screen and (min-width: 1024px) {
   .flexLeft > .slideBar {
     width: 22%;
   }
@@ -581,6 +584,12 @@ header {
 
   .menu .nameStudent {
     line-height: 25px;
+  }
+
+  .menu > ul > li > a > .photoStudent,
+  .photoStudent > img {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }
 
@@ -596,6 +605,12 @@ header {
 
   .flexRight {
     width: 78%;
+  }
+
+  .menu > ul > li > a > .photoStudent,
+  .photoStudent > img {
+    width: 4rem;
+    height: 4rem;
   }
 
   .search {
