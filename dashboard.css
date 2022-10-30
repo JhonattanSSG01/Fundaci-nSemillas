@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
 
-/* Se agrgan propiedades generales */
+/* Se agregan propiedades generales */
 body {
+  max-width: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,11 +38,10 @@ header {
 }
 
 .containerHeader {
-  max-width: 100%;
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
   background-color: #009458;
 }
 
@@ -51,7 +51,7 @@ header {
 }
 
 .icon > hr {
-  font-size: 12px;
+  font-size: 0.82rem;
   border: 3px solid #ffffff;
   border-radius: 2.5rem;
 }
@@ -61,53 +61,51 @@ header {
   width: 50%;
 }
 
-.containerHeader > .search > .iconSearch > input {
-  width: 60%;
-  padding: 0.8rem 0 0.8rem 2.5rem;
-  border: none;
-  border-radius: 3rem;
-  text-transform: capitalize;
-  font-family: "Playfair Display", serif;
-}
-
 /* Icono de lupa */
 .search > .iconSearch {
-  width: 100%;
-  height: 100%;
   position: relative;
-  margin: 0 auto;
 }
 
 .iconSearch > .circle {
-  width: 15px;
-  height: 15px;
-  padding: 4px;
+  width: 0.93rem;
+  height: 0.93rem;
+  padding: 0.25em;
   border-radius: 50%;
   position: absolute;
-  top: 8px;
-  left: 6px;
+  top: 0.5rem;
+  left: 0.375rem;
   background: #000000;
   z-index: 3;
 }
 
-.iconSearch > .circle > .circleWhite {
+.circle > .circleWhite {
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 50%;
   z-index: 2;
 }
 
 .iconSearch > .line {
-  width: 12px;
-  height: 5px;
-  transform: rotate(45deg);
+  width: 0.75rem;
+  height: 0.35rem;
   position: absolute;
-  bottom: 11px;
-  left: 22px;
-  border-radius: 3rem 0 0 3rem;
+  bottom: 0.6rem;
+  left: 1.375rem;
+  transform: rotate(45deg);
   background: #000000;
   z-index: 1;
+}
+
+/* Campo de texto */
+.iconSearch > input {
+  width: 60%;
+  padding: 0.65em 0 0.65em 2.5em;
+  border: none;
+  border-radius: 3rem;
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
 }
 
 /* Sección Usuario */
@@ -116,16 +114,16 @@ header {
 }
 
 .containerHeader > .userFlex {
-  width: 65px;
-  height: 35px;
-  padding: 4px;
+  width: calc(12vw + 3rem);
+  height: 2.2rem;
+  padding: 0.25rem;
   border-radius: 3rem;
   background-color: rgba(245, 245, 245, 0.5);
 }
 
 /* Icono de usuario */
 .user > .iconUserHead {
-  width: 1.2rem;
+  width: 1.1rem;
   height: 1.2rem;
   margin: auto;
   border-radius: 50%;
@@ -133,7 +131,7 @@ header {
 }
 
 .user > .iconUserBody {
-  width: 1.8rem;
+  width: 2rem;
   height: 0.7rem;
   margin: 0.2rem auto;
   border-radius: 50% 50% 0 0;
@@ -143,23 +141,22 @@ header {
 /* Main */
 /* Seccion Bienvenida */
 .welcome {
-  max-width: 100%;
-  margin: 100px 0 30px 0;
-  padding: 10px 0;
+  margin: 6.25rem 0 1.9rem 0;
+  padding: 0.62rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .welcome > .photoStudent {
-  width: auto;
-  padding: 0.8rem;
-  margin: 0 auto;
+  height: 6rem;
+  padding: 0.75rem;
   border-radius: 50%;
   background-color: #69bf97;
 }
 
-.welcome > .photoStudent > img {
+.welcome > .photoStudent > img,
+.agree > img {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
@@ -168,26 +165,26 @@ header {
 
 .welcome > .description {
   width: 80%;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
 }
 
-.description > h2 {
-  font-size: 35px;
+.description > h2,
+.stateOfMind > .titleState > h1 {
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
   text-transform: capitalize;
   text-align: center;
 }
 
 .description > p {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: clamp(1.8rem, 4vw, 2.5rem);
   text-align: justify;
 }
 
 /* Sección Diplomados */
 /* Contenedor */
 .agreeContainer {
-  max-width: 100%;
-  padding: 8px;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,8 +196,8 @@ header {
 
 .agreeContainer > a > .agree {
   width: 17rem;
-  margin: 10px auto;
-  padding: 15px 0;
+  margin: 0.32rem 0;
+  padding: 1em 0;
   color: #000000;
   border: 5px solid #000000;
   border-radius: 2rem;
@@ -215,62 +212,38 @@ header {
 /* Contenido */
 .agree > h2 {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: clamp(1.5rem, 4vw, 1.8rem);
 }
 
-.agree > img {
-  object-fit: cover;
-  border-radius: 50%;
+.agree > h3:last-of-type,
+.agree > p {
+  display: none;
 }
 
 .agree > h3 {
   text-transform: capitalize;
-  line-height: 25px;
-}
-.agree > h3 > span {
-  text-transform: uppercase;
+  line-height: clamp(1.8rem, 4vw, 2.2rem);
 }
 
-.agree > p {
-  display: none;
+.agree > h3 > span {
+  text-transform: uppercase;
 }
 
 /* Sección gráfica media luna */
 /* Título y descripcián de la gráfica */
 .stateOfMind {
-  max-width: 100%;
-  margin: 15px 0;
-  padding: 15px;
-}
-
-.stateOfMind > .titleState > h1 {
-  font-size: 30px;
-  text-align: center;
-  animation-duration: 3s;
-  animation-name: slidein;
+  margin: 1rem 0;
+  padding: 1rem;
 }
 
 .stateOfMind > .titleState > h4 {
-  padding: 20px;
-  font-size: 20px;
+  padding: 1.25rem;
+  font-size: clamp(1.25rem, 3vw, 2rem);
   font-weight: 400;
   text-align: justify;
-  line-height: 25px;
-  animation-duration: 1s;
-  animation-name: slidein;
+  line-height: clamp(1.8rem, 4vw, 2.5rem);
 }
 
-/* @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 100%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  } */
 /* Gráfica media luna */
 .graphContainer {
   display: flex;
@@ -283,11 +256,12 @@ header {
   position: relative;
   width: 12rem;
   height: 12rem;
-  margin: 15px auto;
+  margin: 1rem;
   border-radius: 50%;
   z-index: 1;
 }
 
+/* Color Circulo principal */
 .graphContainer > .happy {
   background: linear-gradient(125deg, #ff8a00 50%, #000000 50%);
 }
@@ -309,12 +283,14 @@ header {
   text-align: center;
 }
 
+/* Circulo Externo o principal */
 .graphCircle > .circleOuter {
   padding: 1em;
   box-sizing: border-box;
   background: #ffffff content-box;
 }
 
+/* Circulo interno */
 .graphCircle > .circleInner {
   background: linear-gradient(transparent 50%, #ffffff 50%);
   transform: scale(1.1);
@@ -322,15 +298,52 @@ header {
 
 .graphCircle > .circleInner > h3 {
   margin-top: 3.2rem;
-  font-size: 18px;
+  font-size: clamp(1.12rem, 2vw, 1.6rem);
   text-transform: capitalize;
-  animation-duration: 3s;
-  animation-name: slidein;
 }
 
-/* Responsive para Tablet Pequeña*/
+/* Responsive para Tablet Pequeña */
 @media only screen and (min-width: 480px) {
+  body {
+    max-width: inherit;
+  }
+
+  /* Sección Búsqueda */
+  /* Campo de texto */
+  .iconSearch > input {
+    width: 80%;
+    padding: 0.5rem 0 0.5rem 2.5rem;
+  }
+
+  /* Main */
+  /* Sección Diplomados */
+  /* Contenedor */
+  .agreeContainer > a > .agree {
+    width: 22rem;
+    margin: 0.32rem;
+  }
+
+  .agree > h3:last-of-type,
+  .agree > p {
+    margin: 1rem;
+    display: inline-block;
+  }
+
+  /* Sección gráfica media luna */
+  .agreeContainer,
+  .graphContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Responsive para Tablet Grande */
+@media only screen and (min-width: 768px) {
   /* Steven */
+
   /* Header */
   header {
     position: static;
@@ -340,6 +353,7 @@ header {
     padding: 1rem;
   }
 
+  /* Porporción para menú lateral y el contenido Header y Main */
   .flexLeft > .slideBar {
     position: fixed;
     width: 30%;
@@ -354,17 +368,10 @@ header {
     position: absolute;
     right: 0;
   }
-  /* Menú Hamburguesa */
 
+  /* Menú Hamburguesa */
   .icon {
     display: none;
-  }
-
-  /* Sección Búsqueda */
-  .containerHeader > .search > .iconSearch > input {
-    width: 60%;
-    padding: 0.5rem 0 0.5rem 2.5rem;
-    font-size: 1.2rem;
   }
 
   /* Sección Usuario */
@@ -382,7 +389,7 @@ header {
   }
 
   .user:hover {
-    transform: scale(1.1);
+    transform: scale(0.8);
     transition: 2000ms;
   }
 
@@ -415,6 +422,8 @@ header {
 
   .menu > ul > li > a {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     color: #000000;
     text-decoration: none;
@@ -425,6 +434,7 @@ header {
     border: 2px solid #009458;
     border-radius: 1.3rem;
   }
+  /* End Opción activada */
 
   .menu > ul > li {
     list-style: none;
@@ -436,7 +446,6 @@ header {
   .photoStudent > img {
     width: 3rem;
     height: 3rem;
-    margin: auto;
     border-radius: 50%;
     vertical-align: middle;
     object-fit: cover;
@@ -444,14 +453,12 @@ header {
 
   .photoStudent {
     padding: 0.25rem;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
   }
 
   .menu .nameStudent {
-    margin: 3px auto;
-    font-size: clamp(0.78rem, 1vw, 2rem);
-    text-align: center;
-    line-height: 20px;
+    font-size: clamp(0.9rem, 1vw, 2rem);
+    line-height: clamp(1rem, 2vw, 2rem);
   }
 
   .nameStudent > h3,
@@ -479,10 +486,12 @@ header {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: "Dosis", sans-serif;
   }
 
+  /* Main */
+  /* Seccion Bienvenida */
   .welcome {
     margin: auto;
   }
@@ -490,18 +499,7 @@ header {
   .welcome > .photoStudent,
   .welcome > .description {
     width: auto;
-  }
-
-  .agreeContainer > a > .agree {
-    width: 85%;
-  }
-
-  .description > h2 {
-    font-size: 1.8rem;
-  }
-
-  .description > p {
-    font-size: 1rem;
+    height: auto;
   }
 
   /* Sección Diplomados */
@@ -510,123 +508,43 @@ header {
     width: 80%;
     margin: 0 auto;
     text-align: justify;
-    display: inline-block;
   }
 
   /* Sección gráfica media luna */
   /* Título y descripcián de la gráfica */
-  .stateOfMind {
-    width: auto;
-    padding: 10px;
-  }
-
-  .stateOfMind > .titleState {
-    width: 90%;
-    margin: auto;
-  }
-
   .stateOfMind > .titleState > h4 {
-    padding: 20px 0;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-  }
-}
-
-/* Responsive para Tablet Grande*/
-@media only screen and (min-width: 744px) {
-  .flexRight {
-    width: 71%;
-  }
-
-  .flexLeft > .slideBar {
-    width: 25%;
-  }
-
-  .menu .nameStudent {
-    padding-left: 0.3rem;
-    text-align: center;
-    text-align: left;
-  }
-
-  .logOut > a {
-    font-size: 1.2rem;
-  }
-
-  .welcome {
-    flex-direction: row-reverse;
-  }
-
-  .description > h2 {
-    text-align: center;
-  }
-  /* Sección Diplomados */
-  /* Contenedor */
-  .agreeContainer > a > .agree {
-    width: 22rem;
-  }
-
-  .graphContainer {
-    padding: 50px 0;
-    flex-direction: row;
+    padding: 1.25rem 0;
   }
 }
 
 /* Responsive para Laptop */
 @media only screen and (min-width: 1024px) {
+  /* Porporción para menú lateral y el contenido Header y Main */
   .flexLeft > .slideBar {
-    width: 22%;
+    width: 25%;
   }
 
   .flexRight {
-    width: 74%;
+    width: 71%;
   }
 
-  .menu .nameStudent {
-    line-height: 25px;
-  }
-
+  /* Menu lateral */
   .menu > ul > li > a > .photoStudent,
   .photoStudent > img {
     width: 3.5rem;
     height: 3.5rem;
   }
-}
 
-/* Responsive para Desktop */
-@media only screen and (min-width: 1440px) {
-  main {
-    padding: 2rem;
-  }
-
-  .flexLeft > .slideBar {
-    width: 18%;
-  }
-
-  .flexRight {
-    width: 78%;
-  }
-
-  .menu > ul > li > a > .photoStudent,
-  .photoStudent > img {
-    width: 4rem;
-    height: 4rem;
-  }
-
+  /* Sección Búsqueda */
   .search {
     width: 100%;
   }
 
-  .containerHeader > .userFlex {
-    width: 20rem;
-  }
-
-  .userFlex > h3 {
-    font-size: 25px;
-  }
-
-  .welcome > .photoStudent {
-    width: auto;
+  /* Main */
+  /* Seccion Bienvenida */
+  .welcome {
+    flex-direction: row-reverse;
+    justify-content: space-around;
   }
 
   .welcome > .photoStudent > img {
@@ -639,52 +557,71 @@ header {
     padding: 8px 30px;
   }
 
-  .description > h2,
-  .stateOfMind > .titleState > h1 {
-    font-size: 3rem;
-  }
-
-  .description > p,
-  .stateOfMind > .titleState > h4 {
-    font-size: 2rem;
-    line-height: 40px;
-  }
-
-  .agreeContainer {
-    margin: 35px 0;
-    padding: 35px 0;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .agreeContainer > a > .agree {
-    width: 23rem;
-    margin: 0 35px;
-  }
-
-  .agree > h2 {
-    font-size: 28px;
-  }
-
-  .agree > h3 {
-    font-size: 25px;
-    line-height: 35px;
-  }
-
-  .agree > p {
-    font-size: 22px;
-  }
-
+  /* Sección gráfica media luna */
   .graphContainer > .graphCircle,
   .graphCircle > .circle {
-    width: 18rem;
-    height: 18rem;
+    width: 15rem;
+    height: 15rem;
   }
 
+  /*  Descripción */
   .graphCircle > .circleInner > h3 {
-    margin-top: 5rem;
-    font-size: 1.6rem;
+    margin-top: 4rem;
+  }
+}
+
+/* Responsive para Desktop */
+@media only screen and (min-width: 1280px) {
+  /* Porporción para menú lateral y el contenido Header y Main */
+  main {
+    padding: 2rem;
+  }
+
+  .flexLeft > .slideBar {
+    width: 20%;
+  }
+
+  .flexRight {
+    width: 76%;
+  }
+
+  /* Menu lateral */
+  .menu > ul > li > a > .photoStudent,
+  .photoStudent > img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* Sección Búsqueda */
+  .search {
+    width: 40%;
+  }
+
+  /* Sección Usuario */
+  .containerHeader > .userFlex {
+    width: 20rem;
+  }
+
+  .userFlex > h3 {
+    font-size: 25px;
+  }
+
+  /* Main */
+  /* Seccion Bienvenida */
+  .description > h2 {
+    text-align: left;
+  }
+
+  /* Sección gráfica media luna */
+  .graphContainer > .graphCircle,
+  .graphCircle > .circle {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  /*  Descripción */
+  .graphCircle > .circleInner > h3 {
+    margin-top: 6rem;
   }
 }
 /* Edwar */
