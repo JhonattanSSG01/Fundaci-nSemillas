@@ -56,6 +56,115 @@ header {
   border-radius: 2.5rem;
 }
 
+/* Menú  */
+.flexLeft > .slideBar {
+  display: block;
+  position: absolute;
+  top: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 2%;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: 1s;
+  background-color: #69bf97;
+}
+
+.navInput:checked + .slideBar {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: 1s;
+}
+
+/* Menu lateral */
+/* Logo */
+.slideBar > .logo {
+  width: 20%;
+  margin: 2rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: #009458;
+}
+
+.slideBar > hr {
+  width: 70%;
+  border-color: #000000;
+}
+
+/* Lista de opciones */
+.slideBar > .menu > ul {
+  padding: 0;
+}
+
+.menu > ul > li > a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Opción activada */
+.menu > ul > .active {
+  border: 5px solid #009458;
+  border-radius: 1.3rem;
+}
+/* End Opción activada */
+
+.menu > ul > li {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 0.5rem;
+}
+
+.menu > ul > li > a > .photoStudent,
+.photoStudent > img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.photoStudent {
+  padding: 0.25rem;
+  background-color: #d9d9d9;
+}
+
+.menu .nameStudent {
+  font-size: clamp(0.9rem, 1vw, 2rem);
+  line-height: clamp(1rem, 2vw, 2rem);
+}
+
+.nameStudent > h3,
+.nameStudent > h4 {
+  margin: 2px 0;
+  text-transform: capitalize;
+}
+
+/* Boton de cerrar sesión */
+.logOut {
+  width: 70%;
+  margin: auto;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 3rem;
+  background-color: #009458;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.8rem;
+}
+
+.logOut > a {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Dosis", sans-serif;
+}
+
 /* Sección Búsqueda */
 .search {
   width: 50%;
@@ -103,7 +212,7 @@ header {
   padding: 0.65em 0 0.65em 2.5em;
   border: none;
   border-radius: 3rem;
-  font-size: clamp(1rem, 4vw, 1.2rem);
+  font-size: clamp(1rem, 3vw, 1rem);
   text-transform: capitalize;
   font-family: "Playfair Display", serif;
 }
@@ -312,7 +421,6 @@ header {
   /* Campo de texto */
   .iconSearch > input {
     width: 80%;
-    padding: 0.5rem 0 0.5rem 2.5rem;
   }
 
   /* Main */
@@ -353,25 +461,26 @@ header {
     padding: 1rem;
   }
 
+  /* Menú Hamburguesa */
+  .icon,
+  .navInput {
+    display: none;
+  }
+  
   /* Porporción para menú lateral y el contenido Header y Main */
   .flexLeft > .slideBar {
     position: fixed;
+    top: 0;
     width: 30%;
-    padding: 0 2%;
     min-height: 100vh;
-    background-color: #69bf97;
-    display: block;
+    clip-path: none;
+    transition: none;
   }
 
   .flexRight {
     width: 66%;
     position: absolute;
     right: 0;
-  }
-
-  /* Menú Hamburguesa */
-  .icon {
-    display: none;
   }
 
   /* Sección Usuario */
@@ -407,87 +516,10 @@ header {
   .slideBar > .logo {
     width: 50%;
     margin: 1.5rem auto;
-    padding: 0.8rem;
-    border-radius: 50%;
-    background-color: #009458;
   }
 
   .slideBar > hr {
-    border-color: #000000;
-  }
-  /* Lista de opcines */
-  .slideBar > .menu > ul {
-    padding: 0;
-  }
-
-  .menu > ul > li > a {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    color: #000000;
-    text-decoration: none;
-  }
-
-  /* Opción activada */
-  .menu > ul > .active {
-    border: 2px solid #009458;
-    border-radius: 1.3rem;
-  }
-  /* End Opción activada */
-
-  .menu > ul > li {
-    list-style: none;
-    margin: 3rem 0;
-    padding: 0.5rem;
-  }
-
-  .menu > ul > li > a > .photoStudent,
-  .photoStudent > img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    vertical-align: middle;
-    object-fit: cover;
-  }
-
-  .photoStudent {
-    padding: 0.25rem;
-    background-color: #d9d9d9;
-  }
-
-  .menu .nameStudent {
-    font-size: clamp(0.9rem, 1vw, 2rem);
-    line-height: clamp(1rem, 2vw, 2rem);
-  }
-
-  .nameStudent > h3,
-  .nameStudent > h4 {
-    margin: 2px 0;
-    text-transform: capitalize;
-  }
-
-  /* Boton de cerrar sesión */
-  .logOut {
-    width: 70%;
-    margin: auto;
-    padding: 0.8rem;
-    text-align: center;
-    border-radius: 3rem;
-    background-color: #009458;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0.8rem;
-  }
-
-  .logOut > a {
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Dosis", sans-serif;
+    width: 90%;
   }
 
   /* Main */
@@ -533,11 +565,6 @@ header {
   .photoStudent > img {
     width: 3.5rem;
     height: 3.5rem;
-  }
-
-  /* Sección Búsqueda */
-  .search {
-    width: 100%;
   }
 
   /* Main */
