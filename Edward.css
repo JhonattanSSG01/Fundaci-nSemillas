@@ -86,8 +86,6 @@ margin-left: 10px;
 }
 
 /* parte de circulos pequeños */
-.circulito {
-}
 
 .pequeño{
 display: flex;
@@ -130,7 +128,6 @@ margin: 0% auto;
 margin: 20px 40px;
 }
 .barras h1{
-width: ;
 font-size: 0.5cm;
 display: flex;
 text-align: center;
@@ -333,9 +330,6 @@ margin: 0%;
 
 
 /* parte de circulos pequeños */
-.circulito {
-}
-
 .pequeño{
   display: flex;
   justify-content: center;
@@ -378,7 +372,6 @@ hr{
   margin: 20px 40px;
 }
 .barras h1{
-  width: ;
   font-size: 0.5cm;
   display: flex;
   text-align: center;
@@ -580,9 +573,6 @@ hr{
 
 
 /* parte de circulos pequeños */
-.circulito {
-}
-
 .pequeño{
   display: flex;
   justify-content: center;
@@ -630,7 +620,6 @@ hr{
   margin: 20px 40px;
 }
 .barras h1{
-  width: ;
   font-size: 0.5cm;
   display: flex;
   text-align: center;
@@ -833,8 +822,6 @@ hr{
 
 
 /* parte de circulos pequeños */
-.circulito {
-}
 
 .pequeño{
   display: flex;
