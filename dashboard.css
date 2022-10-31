@@ -23,7 +23,7 @@ p {
   text-align: left;
 }
 
-@media only screen and (max-width: 460px) {
+
 
   /* Steven */
   /* Edwar */
@@ -244,8 +244,8 @@ p {
 }
 
 .cutis{
-  width: 20px;
-  height:20px;
+  width: 22px;
+  height:22px;
   border-radius: 50%;
   background: white;
   display:flex;
@@ -328,36 +328,49 @@ border-width: 3px;
 
 
   /* Fin Grafica Lineal */
+
+  /* Inicio TortasDani */
+
   #tortasDani .lineaSuperior{
     height: 10px;
     border-style: solid;
     border-color: #009458;
     opacity:0.3;
     margin-top: 5%;
-    width: 420px;
+    width: 100%;
 
   }
-  /* Inicio TortasDani */
   #tortasDani{
   margin: 0%;
   padding: 0%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   }
   #tortasDani .tituloGrafica{
     margin-top: 5%;
     margin-bottom:5%;
   }
+  #clasesD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clase_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   #contenedorPorcentajesD{
   display: flex; 
   flex-direction: column;
   justify-content: center;
-  align-items: left;
   width:100% !important;
   }
-.verdeD, .rojoD, .amarilloD
-{ margin-left: 33%;
+.verdeD, .rojoD, .amarilloD, .blancoD
+{ margin-left: 15%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -367,8 +380,8 @@ border-width: 3px;
 .verdeD .circulo{margin-top:5px;width: 25px;height: 25px;background: #44BB0C;border-radius: 50%;}
 .amarilloD .circulo{margin-top:5px;width: 25px;height: 25px;background: #F4F858;border-radius: 50%;}
 .rojoD .circulo{margin-top:5px;width: 25px;height: 25px;background: #FF0C0C;border-radius: 50%;}
-
-
+.blancoD .circulo{margin-top:5px;width: 25px;height: 25px;background: white;border-radius: 50%;}
+.blancoD h4{color: white;}
 
 
 
@@ -453,3 +466,24 @@ border-width: 3px;
   }
   /* Fin TortasDani */
 
+
+
+/*Inicio Media querys*/
+@media only screen and (min-width: 480px) and (max-width: 769px) {
+.tabletD{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 5%;
+
+}
+
+
+}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 1280px) {
+
+}
