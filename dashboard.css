@@ -285,6 +285,40 @@ border-bottom-style: solid;
 border-width: 3px;
 
 }
+.boquitaf{
+  margin-top:1%;
+  background: black;
+  width: 12px; 
+  height: 5px; 
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0  0 10px 10px ;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.boquitaf1{
+  margin-top: -1px;
+  background: white;
+  width: 9px; 
+  height: 4px; 
+  -moz-border-radius:  0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  align-self: center;
+}
+
+.boquitaA{
+  margin-top:1%;
+  background: black;
+  width: 12px; 
+  height: 7px; 
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0  0 10px 10px ;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
 
   /* Fin Grafica Lineal */
 
