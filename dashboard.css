@@ -85,17 +85,37 @@ p {
     background: red;
     transform: rotate(-70deg);
     align-self: center;
-    margin-left: -35%;
+    margin-left: -35%;}
+    .asciendeD3{
+      margin-top:52%;
+      margin-left: -25%;
 
-  }
-
-  .horizontalA{
-
-    box-shadow: inset 0 -5px 0  WHITE;
-  }
-  .horizontalB{
+      width: 150%;
+      height: 2px;
+      background: red;
+      transform: rotate(-45deg);
+      margin-top:52%;
+      margin-left: -25%;}
+      .asciendeD4{
+        width: 210%;
+        height: 2px;
+        background: red;
+        transform: rotate(-50deg);
+        align-self: center;
+        margin-top:40%;
+        margin-left:-35%;
+        }
+        
+  .horizontalB1{
     height: 2px;
     background: red;
+    width: 100%;
+  }
+
+  .horizontalB2{
+    height: 2px;
+    background: red;
+    width: 105%;
   }
   .desciende{
     width: 150%;
@@ -138,8 +158,6 @@ p {
   grid-row: 2;
 }
 .a4{
-  margin-top: 2px;
-  margin-left: -2px;
   grid-column: 6;
   grid-row: 1;
 }
