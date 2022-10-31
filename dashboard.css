@@ -64,7 +64,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: space-around;
-    justify-content: center;
+    
 
   }
   .contenD{
@@ -72,8 +72,6 @@ p {
       grid-template-columns: 16% 16% 16% 16% 16% 16%;
       grid-template-rows: 50% 50%;
       width: 282px;
-
-
   }
 .horizontal{
     max-width: 100%; 
@@ -187,16 +185,19 @@ p {
 .cuadritoD{
   background: white;
   width: 30px;
-
+}
+.cuadritoD2{
+  background: white;
+  width: 15px;
 }
 
 #textoHorizontalD{
-  margin-top: 5px;
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   border-top-style: solid;
   border-width: 3px;
-  width: 270px;
+  width: 70%;
   justify-content: space-around;
 
 }
@@ -260,7 +261,7 @@ justify-content: space-evenly !important;
   margin-left: 20%;
 max-width: 60%;
 border-bottom-style: solid;
-border-width: 3px;
+border-width: 2px;
 
 }
 .boquitaf{
@@ -447,10 +448,37 @@ border-width: 3px;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
+}
+#textoHorizontalD{
+  margin-top: 5%;
+  width: 80%;
 
 }
-
-
+.contenD{
+  width: 85%;
+}
+.asciende{
+  width: 100px;
+  transform: rotate(-62deg);
+  margin-top: -2%;
+  margin-left: 0.5px;
+}
+.asciendeD3{
+  width: 100px;
+  transform: rotate(-47deg);
+  margin-top: 36px;
+  margin-left: -15px;
+}
+.asciendeD4{
+  width: 100px;
+  background: red;
+  transform: rotate(-65deg);
+  margin-top: -1%;
+  margin-left: -19;
+}
+.desciende{
+  width: 105px;
+}
 }
 @media only screen and (min-width: 769px)  and (max-width: 1024px) {
   .tabletD{
