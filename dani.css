@@ -64,6 +64,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: space-around;
+    justify-content:left;
     
 
   }
@@ -180,7 +181,8 @@ p {
 #abajoD{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 5%;
 }
 .cuadritoD{
   background: white;
@@ -460,7 +462,7 @@ border-width: 2px;
 .asciende{
   width: 100px;
   transform: rotate(-62deg);
-  margin-top: -2%;
+  margin-top: -2px;
   margin-left: 0.5px;
 }
 .asciendeD3{
@@ -473,8 +475,8 @@ border-width: 2px;
   width: 100px;
   background: red;
   transform: rotate(-65deg);
-  margin-top: -1%;
-  margin-left: -19;
+  margin-top: -1px;
+  margin-left: -24px;
 }
 .desciende{
   width: 105px;
@@ -496,7 +498,7 @@ border-width: 2px;
 }
 
 }
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+@media only screen and (min-width: 1025px) {
   .tabletD{
     display: flex;
     flex-direction: row;
@@ -517,5 +519,12 @@ border-width: 2px;
   flex-direction: row;
   align-items: space-evenly;
   width: 100%;
+}
+
+.contenD{
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
+  grid-template-rows: 50% 50%;
+  width: 70%;
 }
 }
