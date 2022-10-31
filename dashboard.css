@@ -62,7 +62,7 @@ p {
   }
   .contenD{
       display: grid;
-      grid-template-columns: 16% 16% 16% 16% 16% 16%;
+       grid-template-columns: 16% 16% 16% 16% 16% 16%;
       grid-template-rows: 50% 50%;
       width: 282px;
 
@@ -109,8 +109,8 @@ p {
 
     box-shadow: inset 0 -5px 0  WHITE;
   }
-  .horizontalB{position:relative ;
-
+  .horizontalB{
+    margin-left: -1px;
     box-shadow: inset 0 6px 0 0 red;
   }
   .desciende{
@@ -151,6 +151,7 @@ p {
 .a1{
   grid-column: 1;
   grid-row: 2;
+
 }
 .d1{
   grid-column: 2;
@@ -177,18 +178,21 @@ p {
   grid-row: 2;
 }
 .a4{
+  margin-top: 2px;
+  margin-left: -2px;
   grid-column: 6;
   grid-row: 1;
 }
 .d5{
+
     grid-column: 6;
   grid-row: 2;
   width: 0;
   height: 0;
-  border-right: 5px solid #f0ad4e;
-  border-top: 5px solid transparent;
-  border-left: 5px solid transparent;
-  border-bottom: 5px solid #f0ad4e;
+  border-right: 3px solid transparent ;
+  border-top: 3px solid red;
+  border-left: 3px solid red ;
+  border-bottom: 3px solid transparent;
 }
 
   /*Emocion*/
@@ -209,12 +213,13 @@ p {
   justify-content: center;
 }
 .cuadritoD{
-  background: #white;
+  background: white;
   width: 30px;
 
 }
 
 #textoHorizontalD{
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   border-top-style: solid;
@@ -224,7 +229,7 @@ p {
 
 }
 #textoHorizontalD h3{
-  margin-block-start: 0.25em;
+  margin-block-start: 0.30em;
 }
 
   /* Fin Grafica Lineal */
