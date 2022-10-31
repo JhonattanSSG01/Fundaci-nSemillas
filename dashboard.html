@@ -7,6 +7,7 @@
 <!-- En la parte del HEAD utilizamos etiquetas acordes para importar recursos como el archivo de CSS,
   manifestar el lenguaje estandar para que admita caracteres especiales y la medida estandar para poder trabajar
   responsive -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,7 @@
 
 <!-- En la parte de BODY se desarrollar todo lo que se podrá visualizar en el navegador -->
 <!-- Start Contenido -->
+
 <body>
   <!-- Steven -->
   <div class="flexLeft">
@@ -75,6 +77,41 @@
     </div>
     <!-- End Menu lateral -->
     <div class="flexRight">
+      <div class="containerPopUp">
+        <input type="checkbox" id="student" class="popIn">
+        <div class="popUp">
+          <div class="headerPop">
+            <label for="student">
+              <section class="top"></section>
+            </label>
+            <section class="photoStudent">
+              <img src="Semillas/Daniel.jpg" alt="">
+            </section>
+          </div>
+          <div class="bodyPop">
+            <section class="input">
+              <section class="inputText">
+                <h3>Daniel Larusso</h3>
+              </section>
+              <section class="inputText">
+                <h3>
+                  Daniel es un estudiane modelo y está inscrito en varios de nuestros diplomados, Tiene 18 años y
+                  relaciona el ambiente
+                  con los deportes.
+                </h3>
+              </section>
+              <section class="inputText">
+                <h3>Becado: SÍ</h3>
+                <h3>Auxilio: SÍ</h3>
+              </section>
+            </section>
+            <section class="socialMedia">
+  
+              <button type="submit">save</button>
+            </section>
+          </div>
+        </div>
+      </div>
       <!-- Start Header -->
       <header>
         <div class="containerHeader">
@@ -107,26 +144,29 @@
         </div>
       </header>
       <!-- End Header -->
-    
+
       <!-- Start Main -->
       <main>
         <!-- Start Sección Bienvenida -->
         <div class="welcome">
           <!-- Seccion de foto del estudiante -->
           <section class="photoStudent">
-            <img src="./Semillas/Daniel.jpg" alt="Imagen del estudiante">
+            <label for="student">
+              <img src="./Semillas/Daniel.jpg" alt="Imagen del estudiante">
+            </label>
           </section>
           <!-- Seccion de la descripción de Bienvenida -->
           <section class="description">
             <h2>bienvenido administrador</h2>
             <p>
-              Bienvenido Administrador estás viendo los Indicadores Emocionales del estudiante Daniel Larusso en relación
+              Bienvenido Administrador estás viendo los Indicadores Emocionales del estudiante Daniel Larusso en
+              relación
               con cada diplomado.
             </p>
           </section>
         </div>
         <!-- End Sección Bienvenida -->
-    
+
         <!-- Start Sección Diplomados -->
         <div class="agreeContainer">
           <!-- Seccion primera tarjeta -->
@@ -137,7 +177,8 @@
               <h3>profesor: señor miyagui</h3>
               <h3>horario: 9:00 am - 11:00 am <br><span>martes y jueves</span></h3>
               <p>
-                Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere al
+                Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere
+                al
                 equilibrio de
                 una especie con los recursos de su entorno.
               </p>
@@ -152,7 +193,8 @@
               <h3>profesor: terry silver</h3>
               <h3>horario: 9:00 am - 11:00 am <br><span>lunes y viernes</span></h3>
               <p>
-                Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere al
+                Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere
+                al
                 equilibrio de
                 una especie con los recursos de su entorno.
               </p>
@@ -166,7 +208,8 @@
               <h3>profesor: jhon kreese</h3>
               <h3>horario: 9:00 am - 11:00 am <br><span>martes y jueves</span></h3>
               <p>
-                Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere al
+                Describe cómo los sistemas biológicos se mantienen productivos con el transcurso del tiempo. Se refiere
+                al
                 equilibrio de
                 una especie con los recursos de su entorno.
               </p>
@@ -174,7 +217,7 @@
           </a>
         </div>
         <!-- End Sección Diplomados -->
-    
+
         <!-- Strat sección gráfica media luna -->
         <div class="stateOfMind">
           <section class="titleState">
