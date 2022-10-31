@@ -496,7 +496,7 @@ border-width: 2px;
 }
 
 }
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+@media only screen and (min-width: 1025px) {
   .tabletD{
     display: flex;
     flex-direction: row;
