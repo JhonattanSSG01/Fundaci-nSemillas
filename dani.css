@@ -1,0 +1,579 @@
+.tituloGrafica,
+#tortasDani h1, 
+#tortasDani h2,
+#tortasDani h3 {
+  margin-block-start: -0.25em;
+  margin-block-end: -0.25em;
+  text-align: center;
+}
+
+#tortasDani h4,
+#tortasDani p {
+  margin-block-start: -0.25em;
+  margin-block-end: -0.125em;
+  text-align: left;
+}
+
+/* Steven */
+/* Edwar */
+
+/* Daniela */
+
+/* Inicio Grafica Lineal */
+#linealDani {
+  display: flex;
+  flex-direction: column;
+}
+.lineaSuperior {
+  box-shadow: inset 0 15px 0 0 #009458;
+  opacity: 0.3;
+  max-width: 100%;
+  height: 15px;
+}
+#linealDani .tituloGrafica {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+#verticalD {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.varVerticalD {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  margin-left: 5%;
+}
+.espacioGraficaD {
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: left;
+}
+.contenD {
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
+  grid-template-rows: 50% 50%;
+  width: 282px;
+}
+.horizontal {
+  max-width: 100%;
+  height: 100%;
+}
+.asciende {
+  width: 200%;
+  height: 2px;
+  background: red;
+  transform: rotate(-70deg);
+  align-self: center;
+  margin-left: -35%;
+}
+.asciendeD3 {
+  margin-top: 52%;
+  margin-left: -25%;
+
+  width: 150%;
+  height: 2px;
+  background: red;
+  transform: rotate(-45deg);
+  margin-top: 52%;
+  margin-left: -25%;
+}
+.asciendeD4 {
+  width: 210%;
+  height: 2px;
+  background: red;
+  transform: rotate(-50deg);
+  align-self: center;
+  margin-top: 40%;
+  margin-left: -35%;
+}
+
+.horizontalB1 {
+  height: 2px;
+  background: red;
+  width: 100%;
+}
+
+.horizontalB2 {
+  height: 2px;
+  background: red;
+  width: 105%;
+}
+.desciende {
+  width: 150%;
+  height: 2px;
+  background: red;
+  transform: rotate(45deg);
+  margin-top: 52%;
+  margin-left: -25%;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.a1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.d1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.d2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.a2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.a3 {
+  grid-column: 4;
+  grid-row: 2;
+}
+.d3 {
+  grid-column: 5;
+  grid-row: 1;
+}
+.d4 {
+  grid-column: 5;
+  grid-row: 2;
+}
+.a4 {
+  grid-column: 6;
+  grid-row: 1;
+}
+.d5 {
+  grid-column: 6;
+  grid-row: 2;
+  width: 0;
+  height: 0;
+  border-right: 3px solid transparent;
+  border-top: 3px solid red;
+  border-left: 3px solid red;
+  border-bottom: 3px solid transparent;
+}
+
+/*Emocion*/
+
+.intermedia {
+  width: 25px;
+  height: 25px;
+}
+#abajoD {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 5%;
+}
+.cuadritoD {
+  background: white;
+  width: 30px;
+}
+.cuadritoD2 {
+  background: white;
+  width: 15px;
+}
+
+#textoHorizontalD {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  border-top-style: solid;
+  border-width: 3px;
+  width: 70%;
+  justify-content: space-around;
+}
+#textoHorizontalD h3 {
+  margin-block-start: 0.3em;
+}
+
+.carita {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cutis {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.ojitos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  justify-content: space-evenly !important;
+}
+
+.ojo {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: black;
+}
+.boquitat {
+  margin-top: 1%;
+  background: black;
+  width: 12px;
+  height: 5px;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.boquitat1 {
+  margin-top: 13%;
+  background: white;
+  width: 9px;
+  height: 4px;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  align-self: center;
+}
+.boquitaN {
+  margin-left: 20%;
+  max-width: 60%;
+  border-bottom-style: solid;
+  border-width: 2px;
+}
+.boquitaf {
+  margin-top: 1%;
+  background: black;
+  width: 12px;
+  height: 6px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.boquitaf1 {
+  margin-top: -1px;
+  background: white;
+  width: 9px;
+  height: 8px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  align-self: center;
+}
+
+.boquitaA {
+  margin-top: 1%;
+  background: black;
+  width: 12px;
+  height: 7px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Fin Grafica Lineal */
+
+/* Inicio TortasDani */
+
+#tortasDani .lineaSuperior {
+  height: 10px;
+  border-style: solid;
+  border-color: #009458;
+  opacity: 0.3;
+  margin-top: 5%;
+  width: 100%;
+}
+#tortasDani {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+}
+#tortasDani .tituloGrafica {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#clasesD {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clase {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+#contenedorPorcentajesD {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100% !important;
+}
+.verdeD,
+.rojoD,
+.amarilloD,
+.blancoD {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+.verdeD .circulo {
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+  background: #44bb0c;
+  border-radius: 50%;
+}
+.amarilloD .circulo {
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+  background: #f4f858;
+  border-radius: 50%;
+}
+.rojoD .circulo {
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+  background: #ff0c0c;
+  border-radius: 50%;
+}
+.blancoD .circulo {
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+}
+.blancoD h4 {
+  color: white;
+}
+
+.contenedorTortaD {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+div.contenedorCD {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
+#tortasDani.div.textoIntD {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.circuloExteriorD1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 175px;
+  background: #ff0c0c;
+  border-radius: 50%;
+  margin: auto;
+  overflow: hidden;
+  background-image: linear-gradient(
+      50deg,
+      #44bb0c,
+      #44bb0c 50%,
+      transparent 10.1%,
+      transparent 100%
+    ),
+    linear-gradient(
+      30deg,
+      #f4f858,
+      #f4f858 49.9%,
+      transparent 50.1%,
+      transparent 100%
+    ),
+    linear-gradient(
+      190deg,
+      #44bb0c,
+      #44bb0c 50%,
+      transparent 10.1%,
+      transparent 100%
+    );
+}
+.circuloExteriorD2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 175px;
+  background: #f4f858;
+  border-radius: 50%;
+  margin: auto;
+  overflow: hidden;
+  background-image: linear-gradient(
+      -90deg,
+      #44bb0c,
+      #44bb0c 50%,
+      transparent 10.1%,
+      transparent 100%
+    ),
+    linear-gradient(
+      0deg,
+      #44bb0c,
+      #44bb0c 50%,
+      transparent 10.1%,
+      transparent 100%
+    );
+}
+.circuloExteriorD3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 175px;
+  background: #ff0c0c;
+  border-radius: 50%;
+  margin: auto;
+  overflow: hidden;
+  background-image: linear-gradient(
+    90deg,
+    #f4f858,
+    #f4f858 49.9%,
+    transparent 50.1%,
+    transparent 100%
+  );
+}
+.circuloExteriorD4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 175px;
+  background: #44bb0c;
+  border-radius: 50%;
+  margin: auto;
+  overflow: hidden;
+  background-image: linear-gradient(
+      45deg,
+      #ff0c0c,
+      #ff0c0c 40%,
+      transparent 10.1%,
+      transparent 100%
+    ),
+    linear-gradient(
+      -45deg,
+      #ff0c0c,
+      #ff0c0c 40%,
+      transparent 10.1%,
+      transparent 100%
+    );
+}
+/* Fin TortasDani */
+
+/*Inicio Media querys*/
+@media only screen and (min-width: 480px) {
+  .tabletD {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #textoHorizontalD {
+    margin-top: 5%;
+    width: 80%;
+  }
+  .contenD {
+    width: 85%;
+  }
+  .asciende {
+    width: 100px;
+    transform: rotate(-62deg);
+    margin-top: -2px;
+    margin-left: 0.5px;
+  }
+  .asciendeD3 {
+    width: 100px;
+    transform: rotate(-47deg);
+    margin-top: 36px;
+    margin-left: -15px;
+  }
+  .asciendeD4 {
+    width: 100px;
+    background: red;
+    transform: rotate(-65deg);
+    margin-top: -1px;
+    margin-left: -24px;
+  }
+  .desciende {
+    width: 105px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .tabletD {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #clasesD {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .tabletD {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .tabletD {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #clasesD {
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+    width: 100%;
+  }
+
+  .contenD {
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-template-rows: 50% 50%;
+    width: 70%;
+  }
+}

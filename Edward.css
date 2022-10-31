@@ -1,1017 +1,908 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
-
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-h1,
-h2,
-h3 {
-  font-family: "Dosis", sans-serif;
-}
-
-h4,
-p {
-  font-family: "Playfair Display", serif;
-}
-body{
-  box-sizing:border-box;
-  margin: 0%;
-  padding: 0%;
-  
-}
 /* torta */
 
-.pTorta h1{ /* texto de la torta */
+.pTorta h1 {
+  /* texto de la torta */
   text-align: center;
   font-size: 0.5cm;
   margin: 20px 40px;
-
 }
-.laTorta{
+.laTorta {
   margin: 0% auto;
   width: 70%;
 }
-.pTorta{
+.pTorta {
   max-width: 100%;
   margin: 0% auto;
 }
-.torta{
-/* creacion torta completa */
-width: 200px;
-height: 200px;
-border-radius: 50%;
-background: conic-gradient(#88CBE8 0% 25%, #FAACAC 25% 100%);
-border:5px solid;
-border-color: #CDCDCD;
-margin: 0% auto;
+.torta {
+  /* creacion torta completa */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(#88cbe8 0% 25%, #faacac 25% 100%);
+  border: 5px solid;
+  border-color: #cdcdcd;
+  margin: 0% auto;
 }
-.un4DeTorta{
-width: 100px; /* creacion grafiaca Torta 1/4 */
-height: 100px; 
-border: 6px solid #ffffff; 
-background: #88CBE8;
-border-radius: 0 100% 0 0;
-margin-left: 95px;
-position: relative;
-top: -5px;
-right: -4px;
+.un4DeTorta {
+  width: 100px; /* creacion grafiaca Torta 1/4 */
+  height: 100px;
+  border: 6px solid #ffffff;
+  background: #88cbe8;
+  border-radius: 0 100% 0 0;
+  margin-left: 95px;
+  position: relative;
+  top: -5px;
+  right: -4px;
 }
 .torta p {
-width: 40px;
-height: 40px;
-margin: 0% 0% 0% 0%;
-position: absolute;
-margin-top: 110px;
-margin-left: 60px;
-font-size: 1cm;
-
+  width: 40px;
+  height: 40px;
+  margin: 0% 0% 0% 0%;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 60px;
+  font-size: 1cm;
 }
-.un4DeTorta p{
-margin: 0;
-padding: 0%;
-margin-top: 40px;
-margin-left: 10px;
+.un4DeTorta p {
+  margin: 0;
+  padding: 0%;
+  margin-top: 40px;
+  margin-left: 10px;
 }
 /* animacion de torta */
-.un4DeTorta:hover { 
+.un4DeTorta:hover {
   transform: scale(1.5);
   transition: 2s;
 }
-.torta:hover { 
+.torta:hover {
   transform: scale(1.5);
   transition: 2s;
 }
 
 /* parte de circulos pequeños */
 
-.pequeño{
-display: flex;
-justify-content: center;
-align-items: center;
+.pequeño {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.circulo{/* circulo de aprobados */
-width: 30px;
-height: 30px;
-border-radius: 50%;
-margin: 0 10px;
+.circulo {
+  /* circulo de aprobados */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
 }
-.p1{
-background-color: #FAACAC;
+.p1 {
+  background-color: #faacac;
 }
-.p2{
-background-color:#88CBE8;
+.p2 {
+  background-color: #88cbe8;
 }
-.texto h2{ /* texto de aprobados  */
-*margin-left: 10px;
-font-size: 0.5cm;
-
+.texto h2 {
+  /* texto de aprobados  */
+  *margin-left: 10px;
+  font-size: 0.5cm;
 }
 
 /* separador */
-hr{
-border: none;
-width: 100%;
-background-color: #009458;
+.division hr {
+  box-shadow: inset 0 15px 0 0 #009458;
+  border: 7px solid #009458;
+  opacity: 0.3;
 }
-
-
-
-
 
 /* Parte de diagrama de barras  */
-.barras{
-max-width: 100%;
-margin: 0% auto;
-margin: 20px 40px;
+.barras {
+  max-width: 100%;
+  margin: 0% auto;
+  margin: 20px 40px;
 }
-.barras h1{
-font-size: 0.5cm;
-display: flex;
-text-align: center;
+.barras h1 {
+  font-size: 0.5cm;
+  display: flex;
+  text-align: center;
 }
-.pequeñocu{
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 20px 15px;
+.pequeñocu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 15px;
 }
-.cuadroo{/* parte de los minis cuadros de color */
-width: 20px;
-height: 20px;
-border-radius: 30%;
-background-color: aqua;
-margin: 0px 10px ;
+.cuadroo {
+  /* parte de los minis cuadros de color */
+  width: 20px;
+  height: 20px;
+  border-radius: 30%;
+  background-color: aqua;
+  margin: 0px 10px;
 }
-.c1{
-background-color: #815FCB;
+.c1 {
+  background-color: #815fcb;
 }
-.c2{
-background-color: #B054BF;
+.c2 {
+  background-color: #b054bf;
 }
-.c3{
-background-color: #FB3D5F;
+.c3 {
+  background-color: #fb3d5f;
 }
-.textocu h2{
-margin: 0%;
-font-size: 0.5cm;
+.textocu h2 {
+  margin: 0%;
+  font-size: 0.5cm;
 }
 
 /* BARRAS LATERALES */
 
-.barrasLate{
-display: flex; 
-justify-content: flex-end;
-align-items: flex-end;/* esto para que la barras no se muevan de abajo */
-max-width: 70%;
-margin: 0% auto;
+.barrasLate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; /* esto para que la barras no se muevan de abajo */
+  max-width: 70%;
+  margin: 0% auto;
 
-*padding-top: 20px;
+  *padding-top: 20px;
 }
 
+.primera {
+  width: 20px;
+  height: 200px;
+  background-color: #815fcb;
+  margin: 0px 5px;
+} /* barras de colores  */
 
-
-.primera{
-width: 20px;
-height: 200px;
-background-color: #815FCB;
-margin:0px 5px;
-
-
-}/* barras de colores  */
-
-
-.b1{
-background:linear-gradient( #815FCB, #ffffff);
-height: 160px;
+.b1 {
+  background: linear-gradient(#815fcb, #ffffff);
+  height: 160px;
 }
-.b2{
-background:linear-gradient( #B054BF, #ffffff);
+.b2 {
+  background: linear-gradient(#b054bf, #ffffff);
 }
-.b3{
-background:linear-gradient( #FB3D5F, #ffffff);
-height: 120px;
+.b3 {
+  background: linear-gradient(#fb3d5f, #ffffff);
+  height: 120px;
 }
-.b4{
-background:linear-gradient( #815FCB, #ffffff);
-margin-left: 30px;
-height: 110px;
-
+.b4 {
+  background: linear-gradient(#815fcb, #ffffff);
+  margin-left: 30px;
+  height: 110px;
 }
-.b5{
-background:linear-gradient( #B054BF, #ffffff);
-height: 90px;
+.b5 {
+  background: linear-gradient(#b054bf, #ffffff);
+  height: 90px;
 }
-.b6{
-background:linear-gradient( #FB3D5F, #ffffff);
-height: 150px;
+.b6 {
+  background: linear-gradient(#fb3d5f, #ffffff);
+  height: 150px;
 }
-.b7{
-background:linear-gradient( #815FCB, #ffffff);
-margin-left: 30px;
-height: 50px;
+.b7 {
+  background: linear-gradient(#815fcb, #ffffff);
+  margin-left: 30px;
+  height: 50px;
 }
-.b8{
-background:linear-gradient( #B054BF, #ffffff);
-height: 80px;
+.b8 {
+  background: linear-gradient(#b054bf, #ffffff);
+  height: 80px;
 }
-.b9{
-background:linear-gradient( #FB3D5F, #ffffff);
-height: 100px;
+.b9 {
+  background: linear-gradient(#fb3d5f, #ffffff);
+  height: 100px;
 }
 .inicioBarras h1 {
-transform: rotate(270deg); /* hizo que el texto rotara */
-font-size: 0.5cm;
-width: 200px;
-height: 10px;
-position: absolute; /* con el positon absolute pude trabajar dentro del div sin que se dañara */
-margin: 0%;
-top:90px;
-left: -90px;
-/* con el top y el left fue mas facil moverlo por la pantalla  */
+  transform: rotate(270deg); /* hizo que el texto rotara */
+  font-size: 0.5cm;
+  width: 200px;
+  height: 10px;
+  position: absolute; /* con el positon absolute pude trabajar dentro del div sin que se dañara */
+  margin: 0%;
+  top: 90px;
+  left: -90px;
+  /* con el top y el left fue mas facil moverlo por la pantalla  */
 }
-.inicioBarras ul {  
-position: absolute;
-text-decoration: none;
-top: -30px;
-left: -10px;
+.inicioBarras ul {
+  position: absolute;
+  text-decoration: none;
+  top: -30px;
+  left: -10px;
 }
-.inicioBarras ul li { /* con esto modifivo las li y les quito los atributos */
-list-style: none;
-margin-top: 12px;
-
+.inicioBarras ul li {
+  /* con esto modifivo las li y les quito los atributos */
+  list-style: none;
+  margin-top: 12px;
 }
-.inicioBarras{
-position: relative; /* este relative me ayudo por que se iba al inicio me faltaba pornerle un relative al div que lo contenia*/
+.inicioBarras {
+  position: relative; /* este relative me ayudo por que se iba al inicio me faltaba pornerle un relative al div que lo contenia*/
 }
-.profes{
-display: flex;
-justify-content: center;
+.profes {
+  display: flex;
+  justify-content: center;
 }
-.profes h2{
-font-size: 0.4cm;
-width: 50px;
-margin-left: 20px;
-margin-right: 20px;
+.profes h2 {
+  font-size: 0.4cm;
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.profe h1{
-text-align: center;
-font-size: 0.5cm;
-margin: 0%;
+.profe h1 {
+  text-align: center;
+  font-size: 0.5cm;
+  margin: 0%;
 }
-
 
 /* celular */
 @media only screen and (min-width: 480px) {
-
   /* Steven */
   /* Edwar */
-  body{
-    box-sizing:border-box;
+  body {
+    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    
   }
   /* torta */
 
-  .pTorta h1{ /* texto de la torta */
+  .pTorta h1 {
+    /* texto de la torta */
     text-align: center;
     font-size: 0.5cm;
     margin: 20px 40px;
-
   }
-  .laTorta{
+  .laTorta {
     margin: 0% auto;
     width: 70%;
   }
-  .pTorta{
+  .pTorta {
     max-width: 100%;
     margin: 0% auto;
   }
-  .torta{
-  /* creacion torta completa */
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(#88CBE8 0% 25%, #FAACAC 25% 100%);
-  border:5px solid;
-  border-color: #CDCDCD;
-  margin: 0% auto;
-}
-  .un4DeTorta{
-  width: 100px; /* creacion grafiaca Torta 1/4 */
-  height: 100px; 
-  border: 6px solid #ffffff; 
-  background: #88CBE8;
-  border-radius: 0 100% 0 0;
-  margin-left: 95px;
-  position: relative;
-  top: -5px;
-  right: -4px;
-}
-  .torta p {
-  width: 40px;
-  height: 40px;
-  margin: 0% 0% 0% 0%;
-  position: absolute;
-  margin-top: 110px;
-  margin-left: 60px;
-  font-size: 1cm;
-
-}
-  .un4DeTorta p{
-  margin: 0;
-  padding: 0%;
-  margin-top: 40px;
-  margin-left: 10px;
-}
-
-
-/* parte de circulos pequeños */
-.pequeño{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.circulo{/* circulo de aprobados */
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-.p1{
-  background-color: #FAACAC;
-}
-.p2{
-  background-color:#88CBE8;
-}
-.texto h2{ /* texto de aprobados  */
-  *margin-left: 10px;
-  font-size: 0.5cm;
-  
-}
-
-/* separador */
-hr{
-  border: none;
-  width: 100%;
-  background-color: #009458;
-  
-}
-
-
-
-
-
-/* Parte de diagrama de barras  */
-.barras{
-  max-width: 100%;
-  margin: 0% auto;
-  margin: 20px 40px;
-}
-.barras h1{
-  font-size: 0.5cm;
-  display: flex;
-  text-align: center;
-}
-.pequeñocu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 15px;
-}
-.cuadroo{/* parte de los minis cuadros de color */
-  width: 20px;
-  height: 20px;
-  border-radius: 30%;
-  background-color: aqua;
-  margin: 0px 10px ;
-}
-.c1{
-  background-color: #815FCB;
-}
-.c2{
-  background-color: #B054BF;
-}
-.c3{
-  background-color: #FB3D5F;
-}
-.textocu h2{
-  margin: 0%;
-  font-size: 0.5cm;
-}
-
-/* BARRAS LATERALES */
-
-.barrasLate{
-  display: flex; 
-  justify-content: flex-end;
-  align-items: flex-end;/* esto para que la barras no se muevan de abajo */
-  max-width: 70%;
-  margin: 0% auto;
-  
-  *padding-top: 20px;
+  .torta {
+    /* creacion torta completa */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#88cbe8 0% 25%, #faacac 25% 100%);
+    border: 5px solid;
+    border-color: #cdcdcd;
+    margin: 0% auto;
   }
-  
+  .un4DeTorta {
+    width: 100px; /* creacion grafiaca Torta 1/4 */
+    height: 100px;
+    border: 6px solid #ffffff;
+    background: #88cbe8;
+    border-radius: 0 100% 0 0;
+    margin-left: 95px;
+    position: relative;
+    top: -5px;
+    right: -4px;
+  }
+  .torta p {
+    width: 40px;
+    height: 40px;
+    margin: 0% 0% 0% 0%;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 60px;
+    font-size: 1cm;
+  }
+  .un4DeTorta p {
+    margin: 0;
+    padding: 0%;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
 
+  /* parte de circulos pequeños */
+  .pequeño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circulo {
+    /* circulo de aprobados */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  .p1 {
+    background-color: #faacac;
+  }
+  .p2 {
+    background-color: #88cbe8;
+  }
+  .texto h2 {
+    /* texto de aprobados  */
+    *margin-left: 10px;
+    font-size: 0.5cm;
+  }
 
-.primera{
-  width: 20px;
-  height: 200px;
-  background-color: #815FCB;
-  margin:0px 5px;
+  /* separador */
+  /* Parte de diagrama de barras  */
+  .barras {
+    max-width: 100%;
+    margin: 0% auto;
+    margin: 20px 40px;
+  }
+  .barras h1 {
+    font-size: 0.5cm;
+    display: flex;
+    text-align: center;
+  }
+  .pequeñocu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px;
+  }
+  .cuadroo {
+    /* parte de los minis cuadros de color */
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: aqua;
+    margin: 0px 10px;
+  }
+  .c1 {
+    background-color: #815fcb;
+  }
+  .c2 {
+    background-color: #b054bf;
+  }
+  .c3 {
+    background-color: #fb3d5f;
+  }
+  .textocu h2 {
+    margin: 0%;
+    font-size: 0.5cm;
+  }
 
+  /* BARRAS LATERALES */
 
-}/* barras de colores  */
+  .barrasLate {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; /* esto para que la barras no se muevan de abajo */
+    max-width: 70%;
+    margin: 0% auto;
 
+    *padding-top: 20px;
+  }
 
-.b1{
-  background:linear-gradient( #815FCB, #ffffff);
-  height: 160px;
-}
-.b2{
-  background:linear-gradient( #B054BF, #ffffff);
-}
-.b3{
-  background:linear-gradient( #FB3D5F, #ffffff);
-  height: 120px;
-}
-.b4{
-  background:linear-gradient( #815FCB, #ffffff);
-  margin-left: 30px;
-  height: 110px;
-  
-}
-.b5{
-  background:linear-gradient( #B054BF, #ffffff);
-  height: 90px;
-}
-.b6{
-  background:linear-gradient( #FB3D5F, #ffffff);
-  height: 150px;
-}
-.b7{
-  background:linear-gradient( #815FCB, #ffffff);
-  margin-left: 30px;
-  height: 50px;
-}
-.b8{
-  background:linear-gradient( #B054BF, #ffffff);
-  height: 80px;
-}
-.b9{
-  background:linear-gradient( #FB3D5F, #ffffff);
-  height: 100px;
-}
-.inicioBarras h1 {
-  transform: rotate(270deg); /* hizo que el texto rotara */
-  font-size: 0.5cm;
-  width: 200px;
-  height: 10px;
-  position: absolute; /* con el positon absolute pude trabajar dentro del div sin que se dañara */
-  margin: 0%;
-  top:90px;
-  left: -90px;
-  /* con el top y el left fue mas facil moverlo por la pantalla  */
-}
-.inicioBarras ul {  
-  position: absolute;
-  text-decoration: none;
-  top: -30px;
-  left: -10px;
-}
-.inicioBarras ul li { /* con esto modifivo las li y les quito los atributos */
-  list-style: none;
-  margin-top: 12px;
-  
-}
-.inicioBarras{
-  position: relative; /* este relative me ayudo por que se iba al inicio me faltaba pornerle un relative al div que lo contenia*/
-}
-.profes{
-  display: flex;
-  justify-content: center;
-}
-.profes h2{
-  font-size: 0.4cm;
-  width: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.profe h1{
-  text-align: center;
-  font-size: 0.5cm;
-  margin: 0%;
-}
+  .primera {
+    width: 20px;
+    height: 200px;
+    background-color: #815fcb;
+    margin: 0px 5px;
+  } /* barras de colores  */
 
+  .b1 {
+    background: linear-gradient(#815fcb, #ffffff);
+    height: 160px;
+  }
+  .b2 {
+    background: linear-gradient(#b054bf, #ffffff);
+  }
+  .b3 {
+    background: linear-gradient(#fb3d5f, #ffffff);
+    height: 120px;
+  }
+  .b4 {
+    background: linear-gradient(#815fcb, #ffffff);
+    margin-left: 30px;
+    height: 110px;
+  }
+  .b5 {
+    background: linear-gradient(#b054bf, #ffffff);
+    height: 90px;
+  }
+  .b6 {
+    background: linear-gradient(#fb3d5f, #ffffff);
+    height: 150px;
+  }
+  .b7 {
+    background: linear-gradient(#815fcb, #ffffff);
+    margin-left: 30px;
+    height: 50px;
+  }
+  .b8 {
+    background: linear-gradient(#b054bf, #ffffff);
+    height: 80px;
+  }
+  .b9 {
+    background: linear-gradient(#fb3d5f, #ffffff);
+    height: 100px;
+  }
+  .inicioBarras h1 {
+    transform: rotate(270deg); /* hizo que el texto rotara */
+    font-size: 0.5cm;
+    width: 200px;
+    height: 10px;
+    position: absolute; /* con el positon absolute pude trabajar dentro del div sin que se dañara */
+    margin: 0%;
+    top: 90px;
+    left: -90px;
+    /* con el top y el left fue mas facil moverlo por la pantalla  */
+  }
+  .inicioBarras ul {
+    position: absolute;
+    text-decoration: none;
+    top: -30px;
+    left: -10px;
+  }
+  .inicioBarras ul li {
+    /* con esto modifivo las li y les quito los atributos */
+    list-style: none;
+    margin-top: 12px;
+  }
+  .inicioBarras {
+    position: relative; /* este relative me ayudo por que se iba al inicio me faltaba pornerle un relative al div que lo contenia*/
+  }
+  .profes {
+    display: flex;
+    justify-content: center;
+  }
+  .profes h2 {
+    font-size: 0.4cm;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .profe h1 {
+    text-align: center;
+    font-size: 0.5cm;
+    margin: 0%;
+  }
 }
 
 /* tabletttttt */
-@media only screen and (min-width: 768px){
-
-  body{
-    box-sizing:border-box;
+@media only screen and (min-width: 768px) {
+  body {
+    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    
   }
   /* torta */
 
-  .pTorta h1{ /* texto de la torta */
+  .pTorta h1 {
+    /* texto de la torta */
     text-align: center;
     font-size: 0.5cm;
     margin: 20px 40px;
-
   }
-  .laTorta{
+  .laTorta {
     margin: 0% auto;
     width: 70%;
   }
-  .pTorta{
+  .pTorta {
     max-width: 100%;
     margin: 0% auto;
   }
-  .torta{
-  /* creacion torta completa */
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(#88CBE8 0% 25%, #FAACAC 25% 100%);
-  border:5px solid;
-  border-color: #CDCDCD;
-  margin: 0% auto;
-}
-  .un4DeTorta{
-  width: 100px; /* creacion grafiaca Torta 1/4 */
-  height: 100px; 
-  border: 6px solid #ffffff; 
-  background: #88CBE8;
-  border-radius: 0 100% 0 0;
-  margin-left: 95px;
-  position: relative;
-  top: -5px;
-  right: -4px;
-}
-  .torta p {
-  width: 40px;
-  height: 40px;
-  margin: 0% 0% 0% 0%;
-  position: absolute;
-  margin-top: 110px;
-  margin-left: 60px;
-  font-size: 1cm;
-
-}
-  .un4DeTorta p{
-  margin: 0;
-  padding: 0%;
-  margin-top: 40px;
-  margin-left: 10px;
-}
-
-
-/* parte de circulos pequeños */
-.pequeño{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.circulo{/* circulo de aprobados */
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-.p1{
-  background-color: #FAACAC;
-}
-.p2{
-  background-color:#88CBE8;
-}
-.texto h2{ /* texto de aprobados  */
-  *margin-left: 10px;
-  font-size: 0.5cm;
-  
-}
-
-
-/* SEPARADOR */
-hr{
-  border: none;
-  width: 5px;
-  background-color: #009458;
-  
-}
-
-
-
-
-
-
-
-
-
-/*  GRAFICAS DE BARRAS  */
-.barras{
-  max-width: 100%;
-  margin: 0% auto;
-  margin: 20px 40px;
-}
-.barras h1{
-  font-size: 0.5cm;
-  display: flex;
-  text-align: center;
-}
-.pequeñocu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 15px;
-}
-.cuadroo{/* parte de los minis cuadros de color */
-  width: 20px;
-  height: 20px;
-  border-radius: 30%;
-  background-color: aqua;
-  margin: 0px 10px ;
-}
-.c1{
-  background-color: #815FCB;
-}
-.c2{
-  background-color: #B054BF;
-}
-.c3{
-  background-color: #FB3D5F;
-}
-.textocu h2{
-  margin: 0%;
-  font-size: 0.5cm;
-}
-
-/* BARRAS LATERALES */
-
-.barrasLate{
-  display: flex; 
-  justify-content: flex-end;
-  align-items: flex-end;/* esto para que la barras no se muevan de abajo */
-  max-width: 70%;
-  margin: 0% auto;
-  
-  *padding-top: 20px;
+  .torta {
+    /* creacion torta completa */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#88cbe8 0% 25%, #faacac 25% 100%);
+    border: 5px solid;
+    border-color: #cdcdcd;
+    margin: 0% auto;
   }
-  
+  .un4DeTorta {
+    width: 100px; /* creacion grafiaca Torta 1/4 */
+    height: 100px;
+    border: 6px solid #ffffff;
+    background: #88cbe8;
+    border-radius: 0 100% 0 0;
+    margin-left: 95px;
+    position: relative;
+    top: -5px;
+    right: -4px;
+  }
+  .torta p {
+    width: 40px;
+    height: 40px;
+    margin: 0% 0% 0% 0%;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 60px;
+    font-size: 1cm;
+  }
+  .un4DeTorta p {
+    margin: 0;
+    padding: 0%;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  /* parte de circulos pequeños */
+  .pequeño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circulo {
+    /* circulo de aprobados */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  .p1 {
+    background-color: #faacac;
+  }
+  .p2 {
+    background-color: #88cbe8;
+  }
+  .texto h2 {
+    /* texto de aprobados  */
+    *margin-left: 10px;
+    font-size: 0.5cm;
+  }
 
 
-.primera{
-  width: 20px;
-  height: 200px;
-  background-color: #815FCB;
-  margin:0px 5px;
 
+  /*  GRAFICAS DE BARRAS  */
+  .barras {
+    max-width: 100%;
+    margin: 0% auto;
+    margin: 20px 40px;
+  }
+  .barras h1 {
+    font-size: 0.5cm;
+    display: flex;
+    text-align: center;
+  }
+  .pequeñocu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px;
+  }
+  .cuadroo {
+    /* parte de los minis cuadros de color */
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: aqua;
+    margin: 0px 10px;
+  }
+  .c1 {
+    background-color: #815fcb;
+  }
+  .c2 {
+    background-color: #b054bf;
+  }
+  .c3 {
+    background-color: #fb3d5f;
+  }
+  .textocu h2 {
+    margin: 0%;
+    font-size: 0.5cm;
+  }
 
-}/* barras de colores  */
+  /* BARRAS LATERALES */
 
+  .barrasLate {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; /* esto para que la barras no se muevan de abajo */
+    max-width: 70%;
+    margin: 0% auto;
 
-.b1{
-  background:linear-gradient( #815FCB, #ffffff);
-  height: 160px;
-}
-.b2{
-  background:linear-gradient( #B054BF, #ffffff);
-}
-.b3{
-  background:linear-gradient( #FB3D5F, #ffffff);
-  height: 120px;
-}
-.b4{
-  background:linear-gradient( #815FCB, #ffffff);
-  margin-left: 30px;
-  height: 110px;
-  
-}
-.b5{
-  background:linear-gradient( #B054BF, #ffffff);
-  height: 90px;
-}
-.b6{
-  background:linear-gradient( #FB3D5F, #ffffff);
-  height: 150px;
-}
-.b7{
-  background:linear-gradient( #815FCB, #ffffff);
-  margin-left: 30px;
-  height: 50px;
-}
-.b8{
-  background:linear-gradient( #B054BF, #ffffff);
-  height: 80px;
-}
-.b9{
-  background:linear-gradient( #FB3D5F, #ffffff);
-  height: 100px;
-}
-.inicioBarras h1 {
-  transform: rotate(270deg); /* hizo que el texto rotara */
-  font-size: 0.5cm;
-  width: 200px;
-  height: 10px;
-  position: absolute; /* con el positon absolute pude trabajar dentro del div sin que se dañara */
-  margin: 0%;
-  top:90px;
-  left: -90px;
-  /* con el top y el left fue mas facil moverlo por la pantalla  */
-}
-.inicioBarras ul {  
-  position: absolute;
-  text-decoration: none;
-  top: -30px;
-  left: -10px;
-}
-.inicioBarras ul li { /* con esto modifivo las li y les quito los atributos */
-  list-style: none;
-  margin-top: 12px;
-  
-}
-.inicioBarras{
-  position: relative; /* este relative me ayudo por que se iba al inicio me faltaba pornerle un relative al div que lo contenia*/
-}
-.profes{
-  display: flex;
-  justify-content: center;
-}
-.profes h2{
-  font-size: 0.4cm;
-  width: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.profe h1{
-  text-align: center;
-  font-size: 0.5cm;
-  margin: 0%;
-}
+    *padding-top: 20px;
+  }
+
+  .primera {
+    width: 20px;
+    height: 200px;
+    background-color: #815fcb;
+    margin: 0px 5px;
+  } /* barras de colores  */
+
+  .b1 {
+    background: linear-gradient(#815fcb, #ffffff);
+    height: 160px;
+  }
+  .b2 {
+    background: linear-gradient(#b054bf, #ffffff);
+  }
+  .b3 {
+    background: linear-gradient(#fb3d5f, #ffffff);
+    height: 120px;
+  }
+  .b4 {
+    background: linear-gradient(#815fcb, #ffffff);
+    margin-left: 30px;
+    height: 110px;
+  }
+  .b5 {
+    background: linear-gradient(#b054bf, #ffffff);
+    height: 90px;
+  }
+  .b6 {
+    background: linear-gradient(#fb3d5f, #ffffff);
+    height: 150px;
+  }
+  .b7 {
+    background: linear-gradient(#815fcb, #ffffff);
+    margin-left: 30px;
+    height: 50px;
+  }
+  .b8 {
+    background: linear-gradient(#b054bf, #ffffff);
+    height: 80px;
+  }
+  .b9 {
+    background: linear-gradient(#fb3d5f, #ffffff);
+    height: 100px;
+  }
+  .inicioBarras h1 {
+    transform: rotate(270deg); /* hizo que el texto rotara */
+    font-size: 0.5cm;
+    width: 200px;
+    height: 10px;
+    position: absolute; /* con el positon absolute pude trabajar dentro del div sin que se dañara */
+    margin: 0%;
+    top: 90px;
+    left: -90px;
+    /* con el top y el left fue mas facil moverlo por la pantalla  */
+  }
+  .inicioBarras ul {
+    position: absolute;
+    text-decoration: none;
+    top: -30px;
+    left: -10px;
+  }
+  .inicioBarras ul li {
+    /* con esto modifivo las li y les quito los atributos */
+    list-style: none;
+    margin-top: 12px;
+  }
+  .inicioBarras {
+    position: relative; /* este relative me ayudo por que se iba al inicio me faltaba pornerle un relative al div que lo contenia*/
+  }
+  .profes {
+    display: flex;
+    justify-content: center;
+  }
+  .profes h2 {
+    font-size: 0.4cm;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .profe h1 {
+    text-align: center;
+    font-size: 0.5cm;
+    margin: 0%;
+  }
 }
 /* destop */
-@media only screen and (min-width: 1024px){
-
-  .division{/*  esto hace que las partes queden al lado*/
-    display: flex
+@media only screen and (min-width: 1024px) {
+  .division {
+    /*  esto hace que las partes queden al lado*/
+    display: flex;
   }
-  body{
-    box-sizing:border-box;
+  body {
+    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    
   }
   /* torta */
 
-  .pTorta h1{ /* texto de la torta */
+  .pTorta h1 {
+    /* texto de la torta */
     text-align: center;
     font-size: 0.5cm;
     margin: 20px 40px;
-
   }
-  .laTorta{
+  .laTorta {
     margin: 0% auto;
     width: 70%;
   }
-  .pTorta{
+  .pTorta {
     max-width: 100%;
     margin: 0% auto;
   }
-  .torta{
-  /* creacion torta completa */
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(#88CBE8 0% 25%, #FAACAC 25% 100%);
-  border:5px solid;
-  border-color: #CDCDCD;
-  margin: 0% auto;
-}
-  .un4DeTorta{
-  width: 100px; /* creacion grafiaca Torta 1/4 */
-  height: 100px; 
-  border: 6px solid #ffffff; 
-  background: #88CBE8;
-  border-radius: 0 100% 0 0;
-  margin-left: 95px;
-  position: relative;
-  top: -5px;
-  right: -4px;
-}
-  .torta p {
-  width: 40px;
-  height: 40px;
-  margin: 0% 0% 0% 0%;
-  position: absolute;
-  margin-top: 110px;
-  margin-left: 60px;
-  font-size: 1cm;
-
-}
-  .un4DeTorta p{
-  margin: 0;
-  padding: 0%;
-  margin-top: 40px;
-  margin-left: 10px;
-}
-
-
-/* parte de circulos pequeños */
-
-.pequeño{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.circulo{/* circulo de aprobados */
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-.p1{
-  background-color: #FAACAC;
-}
-.p2{
-  background-color:#88CBE8;
-}
-.texto h2{ /* texto de aprobados  */
-  *margin-left: 10px;
-  font-size: 0.5cm;
-  
-}
-
-
-/* SEPARADOR */
-hr{
-  border: none;
-  width: 5px;
-  background-color: #009458;
-  
-}
-
-
-
-
-
-
-
-
-
-/*  GRAFICAS DE BARRAS  */
-.barras{
-  max-width: 100%;
-  margin: 0% auto;
-  margin: 20px 40px;
-}
-.barras h1{
-  
-  font-size: 0.5cm;
-  display: flex;
-  text-align: center;
-}
-.pequeñocu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 15px;
-}
-.cuadroo{/* parte de los minis cuadros de color */
-  width: 20px;
-  height: 20px;
-  border-radius: 30%;
-  background-color: aqua;
-  margin: 0px 10px ;
-}
-.c1{
-  background-color: #815FCB;
-}
-.c2{
-  background-color: #B054BF;
-}
-.c3{
-  background-color: #FB3D5F;
-}
-.textocu h2{
-  margin: 0%;
-  font-size: 0.5cm;
-}
-
-/* BARRAS LATERALES */
-
-.barrasLate{
-  display: flex; 
-  justify-content: flex-end;
-  align-items: flex-end;/* esto para que la barras no se muevan de abajo */
-  max-width: 50%;
-  margin: 0% auto;
-  
-  *padding-top: 20px;
+  .torta {
+    /* creacion torta completa */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#88cbe8 0% 25%, #faacac 25% 100%);
+    border: 5px solid;
+    border-color: #cdcdcd;
+    margin: 0% auto;
   }
-  
+  .un4DeTorta {
+    width: 100px; /* creacion grafiaca Torta 1/4 */
+    height: 100px;
+    border: 6px solid #ffffff;
+    background: #88cbe8;
+    border-radius: 0 100% 0 0;
+    margin-left: 95px;
+    position: relative;
+    top: -5px;
+    right: -4px;
+  }
+  .torta p {
+    width: 40px;
+    height: 40px;
+    margin: 0% 0% 0% 0%;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 60px;
+    font-size: 1cm;
+  }
+  .un4DeTorta p {
+    margin: 0;
+    padding: 0%;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
 
+  /* parte de circulos pequeños */
 
-.primera{
-  width: 20px;
-  height: 200px;
-  background-color: #815FCB;
-  margin:0px 5px;
+  .pequeño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circulo {
+    /* circulo de aprobados */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  .p1 {
+    background-color: #faacac;
+  }
+  .p2 {
+    background-color: #88cbe8;
+  }
+  .texto h2 {
+    /* texto de aprobados  */
+    *margin-left: 10px;
+    font-size: 0.5cm;
+  }
 
+  /*  GRAFICAS DE BARRAS  */
+  .barras {
+    max-width: 100%;
+    margin: 0% auto;
+    margin: 20px 40px;
+  }
+  .barras h1 {
+    font-size: 0.5cm;
+    display: flex;
+    text-align: center;
+  }
+  .pequeñocu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px;
+  }
+  .cuadroo {
+    /* parte de los minis cuadros de color */
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: aqua;
+    margin: 0px 10px;
+  }
+  .c1 {
+    background-color: #815fcb;
+  }
+  .c2 {
+    background-color: #b054bf;
+  }
+  .c3 {
+    background-color: #fb3d5f;
+  }
+  .textocu h2 {
+    margin: 0%;
+    font-size: 0.5cm;
+  }
 
-}/* barras de colores  */
+  /* BARRAS LATERALES */
 
+  .barrasLate {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; /* esto para que la barras no se muevan de abajo */
+    max-width: 50%;
+    margin: 0% auto;
 
-.b1{
-  background:linear-gradient( #815FCB, #ffffff);
-  height: 160px;
-}
-.b2{
-  background:linear-gradient( #B054BF, #ffffff);
-}
-.b3{
-  background:linear-gradient( #FB3D5F, #ffffff);
-  height: 120px;
-}
-.b4{
-  background:linear-gradient( #815FCB, #ffffff);
-  margin-left: 30px;
-  height: 110px;
-  
-}
-.b5{
-  background:linear-gradient( #B054BF, #ffffff);
-  height: 90px;
-}
-.b6{
-  background:linear-gradient( #FB3D5F, #ffffff);
-  height: 150px;
-}
-.b7{
-  background:linear-gradient( #815FCB, #ffffff);
-  margin-left: 30px;
-  height: 50px;
-}
-.b8{
-  background:linear-gradient( #B054BF, #ffffff);
-  height: 80px;
-}
-.b9{
-  background:linear-gradient( #FB3D5F, #ffffff);
-  height: 100px;
-}
-.inicioBarras h1 {
-  transform: rotate(270deg); /* hizo que el texto rotara */
-  font-size: 0.5cm;
-  width: 200px;
-  height: 10px;
-  position: absolute; /* con el positon absolute pude trabajar dentro del div sin que se dañara */
-  margin: 0%;
-  top:90px;
-  left: -50px;
-  /* con el top y el left fue mas facil moverlo por la pantalla  */
-}
-.inicioBarras ul {  
-  position: absolute;
-  text-decoration: none;
-  top: -30px;
-  left: 50px;
-}
-.inicioBarras ul li { /* con esto modifivo las li y les quito los atributos */
-  list-style: none;
-  margin-top: 12px;
-  
-}
-.inicioBarras{
-  position: relative; /* este relative me ayudo por que se iba al inicio me faltaba pornerle un relative al div que lo contenia*/
-}
-.profes{
-  display: flex;
-  justify-content: center;
-}
-.profes h2{
-  font-size: 0.4cm;
-  width: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-left: 20px;
-}
-.profe h1{
-  text-align: center;
-  font-size: 0.5cm;
-  margin: 0%;
-}
+    *padding-top: 20px;
+  }
+
+  .primera {
+    width: 20px;
+    height: 200px;
+    background-color: #815fcb;
+    margin: 0px 5px;
+  } /* barras de colores  */
+
+  .b1 {
+    background: linear-gradient(#815fcb, #ffffff);
+    height: 160px;
+  }
+  .b2 {
+    background: linear-gradient(#b054bf, #ffffff);
+  }
+  .b3 {
+    background: linear-gradient(#fb3d5f, #ffffff);
+    height: 120px;
+  }
+  .b4 {
+    background: linear-gradient(#815fcb, #ffffff);
+    margin-left: 30px;
+    height: 110px;
+  }
+  .b5 {
+    background: linear-gradient(#b054bf, #ffffff);
+    height: 90px;
+  }
+  .b6 {
+    background: linear-gradient(#fb3d5f, #ffffff);
+    height: 150px;
+  }
+  .b7 {
+    background: linear-gradient(#815fcb, #ffffff);
+    margin-left: 30px;
+    height: 50px;
+  }
+  .b8 {
+    background: linear-gradient(#b054bf, #ffffff);
+    height: 80px;
+  }
+  .b9 {
+    background: linear-gradient(#fb3d5f, #ffffff);
+    height: 100px;
+  }
+  .inicioBarras h1 {
+    transform: rotate(270deg); /* hizo que el texto rotara */
+    font-size: 0.5cm;
+    width: 200px;
+    height: 10px;
+    position: absolute; /* con el positon absolute pude trabajar dentro del div sin que se dañara */
+    margin: 0%;
+    top: 90px;
+    left: -50px;
+    /* con el top y el left fue mas facil moverlo por la pantalla  */
+  }
+  .inicioBarras ul {
+    position: absolute;
+    text-decoration: none;
+    top: -30px;
+    left: 50px;
+  }
+  .inicioBarras ul li {
+    /* con esto modifivo las li y les quito los atributos */
+    list-style: none;
+    margin-top: 12px;
+  }
+  .inicioBarras {
+    position: relative; /* este relative me ayudo por que se iba al inicio me faltaba pornerle un relative al div que lo contenia*/
+  }
+  .profes {
+    display: flex;
+    justify-content: center;
+  }
+  .profes h2 {
+    font-size: 0.4cm;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+  }
+  .profe h1 {
+    text-align: center;
+    font-size: 0.5cm;
+    margin: 0%;
+  }
 }
 
-
-
-
-
-
-
-  /* Daniela */
-
+/* Daniela */
