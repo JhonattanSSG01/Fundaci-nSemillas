@@ -4,7 +4,7 @@
 ## #Fundación Semillas 🍃🍃
 >![image](https://user-images.githubusercontent.com/80645321/199144593-c4a585d1-3309-462f-83cb-7926b24bf274.png)
 
-El dashboard desarrollado para la fundación semillas, se enfoca en solucionar la gran problematica sobre tener un mejor control frente a las emociones de los estudiantes en base a cada displomados cursado.  
+El dashboard desarrollado para la fundación semillas, se enfoca en solucionar la gran problematica sobre tener un mejor conocimiento frente a las emociones de los estudiantes frente cada actividad realizada en el marco del diplomado.  
 #### ***Puedes visualizar la página*** 👉👉 https://neon-sfogliatella-5dfada.netlify.app
 
 ## Menú lateral del dashboard 💯
@@ -320,4 +320,24 @@ en este diagramas realizar las barras fue algo sencillo lo mas complicado fue el
 este codigo es un poco mas largo puesto que a cada barra es un div 
 ### codigo css
 ![imagen](https://user-images.githubusercontent.com/114676009/199132913-987d5ae3-1c64-408f-9399-d629dae22e0d.png)
+
+# Sesion Dani
+Tuve una participación activa a lo largo de la construcción del proyecto, en la conceptualización del contenido que  debía ser representado. 
+
+###La Grafica lineal
+
+En resumen, cada punto relaciona 1 actividad presentada en el tiempo X y relacionada con la emoción Y. Ya que trabajamos bajo el principio de que el estudiante ha calificado con una carita determinada cada actividad donde se le ha facilitado el formulario. 
+
+En cuanto a mi sesión de la página, realicé la gráfica que brindaba una visualización de el estado de animo del estudiante por mes, era una grafica tipo lineal con dos variables: las independientes, referidas a los meses y las dependientes representadas en caras de maxima felicidad y tristeza; o intermedias de alegria o aburrimiento preocupado. Se diseñó el modelo de las caritas y se les aplicó cambio de color y movimiento en el eje x cuando se pasara el cursor por encima. 
+
+Sobre la ejecucion. Se hizo a punta de flex box y en el interior de la grafica se usó grid. Dentro de las grillas se usó estilos de borde superior o inferior con margenes en pixeles y estilo punteado. Si se nota, este código empieza con un despliegue en columnas, que solo aplica filas en los contenidos que van entre el titulo y las variables de la horizonal, hay algunos espacios en blanco que son flex vacíos de determinada anchura. 
+
+Cabe resaltar que las gráficas lineales son buenas para representar los cambios entonces puede ser de gran beneficio notar cuando hay un cambio abrupto de ànimo en un tiempo corto y seguido de otro totalmente distinto porque podríamos estar ante la presencia de un fenómeno positivo o negativo que sería importante averiguar por su impacto en la vida individual del estudiante y su estado mental. 
+
+
+
+###La Grafica tortas
+En cuanto a estas gráficas lo que representan es un acumulado de actividades por clase. Donde se pueden haber presentado 1 o más actividades. Lo que representan estas tortas se refiere a una única clase con muchas actividades las cuales un porcentaje el estudiante calificó en tres categorías: sentimiento de tristeza, indiferencia o felicidad. De manera que el administrador o instructor decida preocuparse por aquellas clases donde las actividades generaron en su mayoría sentimienos negativos del joven o persona en cuestion. De esta manera hay una secuencia temporal, a medida que van aumentando el número de 
+
+La ejecución se realizó a través de flexbox y superposiciones. Los colores fueron logrados acomodando gradientes de color con grados y porcentaje de ocupación que era paralelo al diametro del circulo. En este diseño no hay animaciones. 
 
