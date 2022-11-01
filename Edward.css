@@ -174,7 +174,10 @@ margin: 0% auto;
 *padding-top: 20px;
 }
 
-
+.primera:hover { 
+  transform: scale(1.5);
+  transition: 2s;
+}
 
 .primera{
 width: 20px;
