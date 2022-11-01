@@ -1,5 +1,5 @@
 # Bienvenidos a la Fundación Semillas 👋👋 !!!
-# Sesion Steven
+# Sesión Steven
 
 ## #Fundación Semillas 🍃🍃
 >![image](https://user-images.githubusercontent.com/80645321/199144593-c4a585d1-3309-462f-83cb-7926b24bf274.png)
