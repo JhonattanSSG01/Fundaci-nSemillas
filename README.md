@@ -325,6 +325,7 @@ este codigo es un poco mas largo puesto que a cada barra es un div
 Tuve una participación activa a lo largo de la construcción del proyecto, en la ejecución del SCRUM y en la en la conceptualización del contenido que debía ser representado.
 
 La estructura principal de mi sección en html tiene un flex en dirección de columna que contiene dos flex fundamentales. El el linealDani y el tortasDani. 
+
 ![image](https://user-images.githubusercontent.com/80645321/199297502-7c74310b-8e52-4d73-a7a9-d5f6a760d7f0.png)
 
 ###La Grafica lineal
@@ -333,10 +334,11 @@ En cuanto a mi sesión de la página, realicé la gráfica que brindaba una visu
 Cabe resaltar que las gráficas lineales son buenas para representar los cambios entonces puede ser de gran beneficio notar cuando hay un cambio abrupto de ánimo en un tiempo corto y seguido de otro totalmente distinto porque podríamos estar ante la presencia de un fenómeno positivo o negativo que sería importante averiguar por su impacto en la vida individual del estudiante y su estado mental.
 La estructura de esta parte consta de 3 partes que es 
 Sobre la ejecución. Se hizo a punta de Flex box y en el interior de la gráfica se usó grid. Dentro de las grillas se usó estilos de borde superior o inferior con márgenes en pixeles y estilo punteado. Si se nota, este código empieza con un despliegue en columnas, que solo aplica filas en los contenidos que van entre el titulo y las variables de la horizontal, hay algunos espacios en blanco que son Flex vacíos de determinada anchura.
+
 ####Estructura
 Dentro de este id Hay 4 clases fundamentales. lineaSuperior, un tituloGrafica, espacioGraficaD y abajoD. 
-
 ![image](https://user-images.githubusercontent.com/80645321/199297760-f1c913f0-6758-454b-83b3-16a7230af1cb.png)
+
 espacioGraficaD es un flexbox en filas que contiene 3 clases: varVerticalD, cuadritoD2 y contenD. 
 
 ![image](https://user-images.githubusercontent.com/80645321/199297794-6f5eee7c-a380-45a6-88a3-5dc44701e461.png)
@@ -349,6 +351,7 @@ Intermedia es una carita, sin estilos, su background es blanco, pero cuenta con 
 CuadritoD2 es un cuadro con dimensiones para manejar ciertos espacios y contenD es la grilla que guarda cada uno de sus cajones etiquetados por mes m1 y por fila siendo m11 mes uno fila 1, y m12 mes 1 fila 2. 
 
 ![image](https://user-images.githubusercontent.com/80645321/199297884-01bf1ede-dc13-4607-a8cd-df22359501f3.png)
+
 ![image](https://user-images.githubusercontent.com/80645321/199297893-1d16b761-83bb-4727-88c3-8c420ea297a7.png)
 
 AbajoD solo alberga los textos de los meses en etiquetas h3, contenedores a los cuales se les aplicará el estilo Solido de Borde para hacer las abscisas. 
@@ -356,13 +359,16 @@ AbajoD solo alberga los textos de los meses en etiquetas h3, contenedores a los 
 La ejecución se realizó a través de flexbox y superposiciones. Los colores fueron logrados acomodando gradientes de color con grados y porcentaje de ocupación que era paralelo al diámetro del circulo. En este diseño no hay animaciones. Las clases principales de tortasDani son, lineaSuperior, tituloGrafica y clasesD. 
 
 ![image](https://user-images.githubusercontent.com/80645321/199297927-096596c3-b45e-432a-aba0-9e375009bdd2.png)
+
 Explorando clasesD tenemos tabletD1 y tabletD2 dentro de ellas tenemos las unidades constructivas clase 1, clase 2 clase 3 y clase 4 distribuidas de pares dentro de los flexbox de las Tablet, eso porque en Tablet nuestra visualización tendríamos en 1 columna dos clases desplegadas. 
 
 ![image](https://user-images.githubusercontent.com/80645321/199297956-708bcbb6-ce3c-4e01-a6a8-765f809e4357.png)
+
 El contenedor porcentajes esta dentro de cada una de las clases junto al contenedorTortaD. Paarticularmente en el primero tenemos los átomos circulo y los contenedores que dictan el color de dicho circulo. Igualmente los átomos h4. 
 
 En tortaD
 ![image](https://user-images.githubusercontent.com/80645321/199298001-77fca01a-12f2-44c6-ad9d-370e1ea8a88b.png)
+
 Tenemos un circulo exterior y un contenedor que tiene forma circular y dentro el texto del total de actividades para dar la idea de cuál es ell 100% que se está manejando. 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
