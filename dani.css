@@ -422,6 +422,10 @@ border-width: 2px;
     overflow: hidden;
     background-image: linear-gradient(45deg, #FF0C0C, #FF0C0C 40.0%, transparent 10.1%, transparent 100%),linear-gradient(-45deg, #FF0C0C, #FF0C0C 40.0%, transparent 10.1%, transparent 100%); 
   }
+  .tituloGrafica{
+    font-size: clamp(1.7rem, 2vw,1.6rem);
+  }
+
   /* Fin TortasDani */
 
 
@@ -442,18 +446,8 @@ border-width: 2px;
 .contenD{
   width: 80%;
 }
-.asciende{
-  width: 100px;
-  transform: rotate(-62deg);
-  margin-top: -2px;
-  margin-left: 0.5px;
-}
-.asciendeD4{
-  width: 100px;
-  background: red;
-  transform: rotate(-65deg);
-  margin-top: -1px;
-  margin-left: -24px;
+.tituloGrafica{
+  font-size: clamp(2.3rem, 2vw,1.6rem);
 }
 
 }
@@ -471,6 +465,9 @@ border-width: 2px;
   align-items: space-evenly;
   width: 100%;
 }
+.tituloGrafica{
+  font-size: clamp(3rem, 2vw,1.6rem);
+}
 
 }
 @media only screen and (min-width: 1025px) {
@@ -487,13 +484,15 @@ border-width: 2px;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-  
   }
   #clasesD{
   display: flex;
   flex-direction: row;
   align-items: space-evenly;
   width: 100%;
+}
+.tituloGrafica{
+  font-size: clamp(4rem, 2vw,1.6rem);
 }
 
 }
