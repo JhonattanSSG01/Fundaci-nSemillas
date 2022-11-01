@@ -449,7 +449,61 @@ border-width: 2px;
 .tituloGrafica{
   font-size: clamp(2.3rem, 2vw,1.6rem);
 }
+.carita{
+  width: 50px;
+  height:50px;
+}
 
+.cutis{
+  width: 45px;
+  height:45px;
+}
+.cuadritoD{width:55px;}
+.ojo{width:8px;height:8px;}
+.boquitat{
+  width: 22px; 
+  height: 10px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.boquitat1{
+  width: 18px; 
+  height: 8px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  align-self: center;
+}
+.boquitaN
+{
+border-width: 3px;
+
+}
+.boquitaf{
+
+  width: 25px; 
+  height: 10px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+
+}
+
+.boquitaf1{
+
+  width: 18px; 
+  height: 10px; 
+  -moz-border-radius:  0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.boquitaA{
+
+  width: 25px; 
+  height: 15px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+}
 }
 @media only screen and (min-width: 769px)  and (max-width: 1024px) {
   .tabletD{
@@ -468,7 +522,61 @@ border-width: 2px;
 .tituloGrafica{
   font-size: clamp(3rem, 2vw,1.6rem);
 }
+.carita{
+  width: 50px;
+  height:50px;
+}
 
+.cutis{
+  width: 45px;
+  height:45px;
+}
+.cuadritoD{width:55px;}
+.ojo{width:8px;height:8px;}
+.boquitat{
+  width: 22px; 
+  height: 10px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.boquitat1{
+  width: 18px; 
+  height: 8px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  align-self: center;
+}
+.boquitaN
+{
+border-width: 3px;
+
+}
+.boquitaf{
+
+  width: 25px; 
+  height: 10px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+
+}
+
+.boquitaf1{
+
+  width: 18px; 
+  height: 10px; 
+  -moz-border-radius:  0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.boquitaA{
+
+  width: 25px; 
+  height: 15px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+}
 }
 @media only screen and (min-width: 1025px) {
   .tabletD{
@@ -494,5 +602,59 @@ border-width: 2px;
 .tituloGrafica{
   font-size: clamp(4rem, 2vw,1.6rem);
 }
+.carita{
+  width: 50px;
+  height:50px;
+}
 
+.cutis{
+  width: 45px;
+  height:45px;
+}
+.cuadritoD{width:55px;}
+.ojo{width:8px;height:8px;}
+.boquitat{
+  width: 22px; 
+  height: 10px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.boquitat1{
+  width: 18px; 
+  height: 8px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  align-self: center;
+}
+.boquitaN
+{
+border-width: 3px;
+
+}
+.boquitaf{
+
+  width: 25px; 
+  height: 10px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+
+}
+
+.boquitaf1{
+
+  width: 18px; 
+  height: 10px; 
+  -moz-border-radius:  0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.boquitaA{
+
+  width: 25px; 
+  height: 15px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+}
 }
