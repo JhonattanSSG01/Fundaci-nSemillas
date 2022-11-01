@@ -22,11 +22,11 @@
 
 <!-- En la parte de BODY se desarrollar todo lo que se podrá visualizar en el navegador -->
 <!-- Start Contenido -->
-
 <body>
   <!-- Steven -->
   <div class="flexLeft">
     <!-- Start Menu lateral -->
+    <!-- Input con id="nav" para llamar a su hermano adyacente, en este caso es el menú -->
     <input type="checkbox" id="nav" class="navInput">
     <div class="slideBar">
       <!-- Sección logo -->
@@ -34,7 +34,7 @@
         <img src="./Semillas/logoSWhite.png" width="100%" alt="Imagen del estudiante">
       </section>
       <hr>
-      <!-- Sección menú dfe opciones -->
+      <!-- Sección menú de opciones -->
       <nav class="menu">
         <ul>
           <li class="active">
@@ -79,17 +79,29 @@
     </div>
     <!-- End Menu lateral -->
     <div class="flexRight">
+      <!-- Start Pop Up -->
       <div class="containerPopUp">
+        <!-- Input con id="student" para llamar a su hermano adyacente, en este caso es el pop up -->
         <input type="checkbox" id="student" class="popIn">
+        <!-- Seccion Pop Up -->
         <div class="popUp">
+          <!-- Seccion encabezado del pop up -->
           <div class="headerPop">
-            <label for="student">
-              <section class="top"></section>
-            </label>
+            <section class="top">
+              <!-- Por el atributo for="student" llama o cierra al input que tenga el id="student", en este caso llama al pop up -->
+              <label for="student">
+                <!-- Seccion icono x -->
+                <div class="containerX">
+                  <div class="line left"></div>
+                  <div class="line right"></div>
+                </div>
+              </label>
+            </section>
             <section class="photoStudent">
-              <img src="Semillas/Daniel.jpg" alt="">
+              <img src="./Semillas/Daniel.jpg" alt="imagen del estudiante">
             </section>
           </div>
+          <!-- Seccion cuerpo del pop up -->
           <div class="bodyPop">
             <section class="input">
               <section class="inputText">
@@ -107,8 +119,14 @@
                 <h3>Auxilio: SÍ</h3>
               </section>
             </section>
-            <section class="socialMedia">
-  
+            <!-- Seccion redes sociales -->
+            <section class="socialMedia input">
+              <img src="Semillas/instagram.svg" alt="logo Instagram">
+              <img src="Semillas/twiter.svg" alt="logo Twiter">
+              <img src="Semillas/facebook.svg" alt="logo Facebook">
+            </section>
+            <!-- Seccion boton -->
+            <section class="containerButton">
               <button type="submit">save</button>
             </section>
           </div>
@@ -118,6 +136,7 @@
       <header>
         <div class="containerHeader">
           <!-- Sección menú hamburguesa -->
+          <!-- Por el atributo for="nav" llama o cierra al input que tenga el id="nav", en este caso llama al menú lateral -->
           <label for="nav" class="icon">
             <section class="icon">
               <hr>
@@ -153,6 +172,7 @@
         <div class="welcome">
           <!-- Seccion de foto del estudiante -->
           <section class="photoStudent">
+            <!-- Por el atributo for="student" llama o cierra al input que tenga el id="student", en este caso llama al pop up -->
             <label for="student">
               <img src="./Semillas/Daniel.jpg" alt="Imagen del estudiante">
             </label>
