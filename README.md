@@ -18,6 +18,7 @@ en este diagramas realizar las barras fue algo sencillo lo mas complicado fue el
 
 ### codigo Html
 ![imagen](https://user-images.githubusercontent.com/114676009/199132836-cc6b3f3a-1fa1-46d1-8e17-1d6749a3617c.png)
+
 este codigo es un poco mas largo puesto que a cada barra es un div 
 ### codigo css
 ![imagen](https://user-images.githubusercontent.com/114676009/199132913-987d5ae3-1c64-408f-9399-d629dae22e0d.png)
