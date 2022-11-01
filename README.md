@@ -7,7 +7,7 @@
 El dashboard desarrollado para la fundación semillas, se enfoca en solucionar la gran problematica sobre tener un mejor control frente a las emociones de los estudiantes en base a cada displomados cursado.  
 #### ***Puedes visualizar la página*** 👉👉 https://neon-sfogliatella-5dfada.netlify.app
 
-## Menú lateral del dashboard💯
+## Menú lateral del dashboard 💯
 ```
 <!-- Start Menu lateral -->
 <input type="checkbox" id="nav" class="navInput">
@@ -22,12 +22,8 @@ El dashboard desarrollado para la fundación semillas, se enfoca en solucionar l
     <ul>
       <li class="active">
         <a href="">
-          <section class="photoStudent">
-            'Imgen del estudiante
-          </section>
-          <section class="nameStudent">
+            'Imagen del estudiante'
             'Nombre del estudinate'
-         </section>
         </a>
       </li>
     </ul>
@@ -38,10 +34,40 @@ El dashboard desarrollado para la fundación semillas, se enfoca en solucionar l
   </section>
 </div>
 <!-- End menu lateral -->
+
+<!--  Menu hamburguesa -->
+<!-- Por el atributo for="nav" llama o cierra al input que tenga el id="nav", en este caso llama al menú lateral -->
+<label for="nav" class="icon">
+  <section class="icon">
+    <hr>
+    <hr>
+    <hr>
+  </section>
+</label>
+```
+```
+/* Menú  */
+.flexLeft > .slideBar {
+  display: block;
+  position: absolute;
+  top: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 2%;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: 1s;
+  background-color: #69bf97;
+}
+
+.navInput:checked + .slideBar {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: 1s;
+}
 ```
 En esta parte del código se realizó un menú lateral fijo en la parte izquierda, para poder tener mejor accesibilidad a cada estudiante de la fundación semillas y poder visualizar las gráficas respectivas de cada diplomado en específico. El gran desafío con este menú fue ponerlo al lado izquierdo del contenido principal, al mismo tiempo cuando está en el dispositivo mobile, este se esconde y se despliega solamente cuando se da clic al icono hamburguesa desarrollado con CSS vainilla. La forma que logre solucionar fue poner en un contenedor general todo el contenido principal y darle una posición para lograr moverlo en relación a la ventana del navegador al lado derecho y con tamaño de ancho proporcionado en distintas resoluciones de cada dispositivo para que se acoplen.
 
-Nota: Gracias al input de tipo check box con ID respetivo se logra desarrollar la función de esconder o llamar su hermano más cercano, en este caso es el menú. De igual manera, dentro de label con atributo for s referecnia para realizar la rspectiva conexión al ID del input necesario.
+Nota: Gracias al input de tipo check box con ID respetivo se logra desarrollar la función de esconder o llamar su hermano más cercano, en este caso es el menú. De igual manera, dentro de label con atributo for se referecnia para realizar la rspectiva conexión al ID del input necesario.
 
 > Desktop y Tablet
 
@@ -50,6 +76,101 @@ Nota: Gracias al input de tipo check box con ID respetivo se logra desarrollar l
 > Mobile 
 
 ![image](https://user-images.githubusercontent.com/80645321/199147784-ad2e9203-3759-4d81-8255-5de1d748e96e.png)
+ 
+## Pop Up sobre información del estudiante 💯
+```
+ <!-- Start Pop Up -->
+  <div class="containerPopUp">
+   <!-- Input con id="student" para llamar a su hermano adyacente, en este caso es el pop up -->
+   <input type="checkbox" id="student" class="popIn">
+   <!-- Seccion Pop Up -->
+   <div class="popUp">
+     <!-- Seccion encabezado del pop up -->
+      <div class="headerPop">
+       
+      </div>
+      <!-- Seccion cuerpo del pop up -->
+       <div class="bodyPop">
+         <section class="input">
+             'Nombre del estudiante'
+             'Biografia del estudiante'
+             'Descripcion del estudiante'
+         </section>
+         <!-- Seccion redes sociales -->
+         <section class="socialMedia input">
+           'Iconos de las redes sociales'
+         </section>
+         <!-- Seccion boton -->
+         <section class="containerButton">
+           <button type="submit">save</button>
+         </section>
+        </div>
+      </div>
+    </div>
+```
+```
+/* Pop up */
+.popUp {
+  width: 95%;
+  max-width: 500px;
+  height: 50rem;
+  border-radius: 0.5rem;
+  background-color: rgb(174, 217, 201);
+  position: absolute;
+  top: 2rem;
+  right: 2.8rem;
+  transform: rotate(0deg) translate(12%, 12%);
+  visibility: hidden;
+}
+
+/* Pop up visible */
+.popIn:checked + .popUp {
+  visibility: visible;
+}
+```
+En esta parte de código se desarrolló el pop up para que solo se visualice cuando sédé clic en la foto del estudiante ya seleccionado en el menú, este aparecerá en cierta posición con lo esperado y cuando se da clic en la x o parte superior del Pop Up este se cerrara. 
+
+Nota: Gracias al input de tipo check box con ID respetivo se logra desarrollar la función de esconder o llamar su hermano más cercano, en este caso es el pop up. De igual manera, dentro de label con atributo for se referecnia para realizar la rspectiva conexión al ID del input necesario.
+
+> ![image](https://user-images.githubusercontent.com/80645321/199152084-26e3e6b7-d8b2-4b00-b233-9c480223a516.png)
+
+## Header estructura 💯
+```
+<!-- Start Header -->
+ <header>
+  <div class="containerHeader">
+   <!-- Sección menú hamburguesa -->
+   <!-- Por el atributo for="nav" llama o cierra al input que tenga el id="nav", en este caso llama al menú lateral -->
+    <label for="nav" class="icon">
+     <section class="icon">
+       'icono del menu hamburguesa'
+     </section>
+    </label>
+    <!-- Sección campo de búsqueda -->
+     <section class="search">
+      <section class="iconSearch">
+        'Icono de lupa'
+       </section>
+     </section>
+     <!-- Sección de usuario -->
+     <section class="userFlex">
+       <section class="user">
+       'Icono del usuario'
+       </section>
+      /section>
+   </div>
+ </header>
+  <!-- End Header -->
+```
+En esta parte del código referencia el header del dashboard que abarca un input text para lograr una búsqueda respectiva, su icono se desarrolló con CSS vanilla y lo unico desafuente fueron el tamño de cada item que lo forma, también, está la parte del usuario que al igual que el icono de búsqueda, este se logró realizar con CSs vanilla. Finalmente, en las resoluciones menores a 480px este se fijará en la parte superior para mejor accesibilidad al menú desplegable.
+
+> Desktop y Tablet Grande
+
+![image](https://user-images.githubusercontent.com/80645321/199153670-329139d0-079d-4a75-a2c4-37d24860b8a2.png)
+
+> Mobile Y Tablet pequeña
+
+![image](https://user-images.githubusercontent.com/80645321/199153748-218a890a-2e72-455a-8dca-26e828e1c0de.png)
 
 
 
