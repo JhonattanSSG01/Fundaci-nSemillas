@@ -425,6 +425,23 @@ border-width: 2px;
   .tituloGrafica{
     font-size: clamp(1.7rem, 2vw,1.6rem);
   }
+  .carita {
+    transition: transform 250ms;
+  }
+  
+  .carita:hover {
+    transform: translateX(10px);
+  }
+  
+  .cutis:hover .boquitat1 {
+    background:#F4F858;
+  }
+  .cutis:hover .boquitaf1 {
+    background:#F4F858;
+  }
+  .cutis:hover{
+    background:#F4F858;
+  }
 
   /* Fin TortasDani */
 
@@ -453,7 +470,6 @@ border-width: 2px;
   width: 50px;
   height:50px;
 }
-
 .cutis{
   width: 45px;
   height:45px;
@@ -526,7 +542,9 @@ border-width: 3px;
   width: 50px;
   height:50px;
 }
-
+.carita {
+  transition: transform 250ms;
+}
 .cutis{
   width: 45px;
   height:45px;
@@ -577,6 +595,7 @@ border-width: 3px;
   -moz-border-radius: 0 0 20px 20px;
   border-radius: 0  0 20px 20px ;
 }
+
 }
 @media only screen and (min-width: 1025px) {
   .tabletD{
@@ -606,7 +625,6 @@ border-width: 3px;
   width: 50px;
   height:50px;
 }
-
 .cutis{
   width: 45px;
   height:45px;
