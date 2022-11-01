@@ -1,4 +1,58 @@
-# Fundaci-nSemillas
+# Bienvenidos a la Fundación Semillas 👋👋 !!!
+# Sesion Steven
+
+## #Fundación Semillas 🍃🍃
+>![image](https://user-images.githubusercontent.com/80645321/199144593-c4a585d1-3309-462f-83cb-7926b24bf274.png)
+
+El dashboard desarrollado para la fundación semillas, se enfoca en solucionar la gran problematica sobre tener un mejor control frente a las emociones de los estudiantes en base a cada displomados cursado.  
+#### ***Puedes visualizar la página*** 👉👉 https://neon-sfogliatella-5dfada.netlify.app
+
+## Menú lateral del dashboard💯
+```
+<!-- Start Menu lateral -->
+<input type="checkbox" id="nav" class="navInput">
+<div class="slideBar">
+  <!-- Sección logo -->
+   <section class="logo">
+    'Imagen del logo de la empresa'
+   </section>
+   <hr>
+   <!-- Sección menú de opciones -->
+   <nav class="menu">
+    <ul>
+      <li class="active">
+        <a href="">
+          <section class="photoStudent">
+            'Imgen del estudiante
+          </section>
+          <section class="nameStudent">
+            'Nombre del estudinate'
+         </section>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Sección cerrar sesión -->
+  <section class="logOut">
+    'Botóncerrar sesión
+  </section>
+</div>
+<!-- End menu lateral -->
+```
+En esta parte del código se realizó un menú lateral fijo en la parte izquierda, para poder tener mejor accesibilidad a cada estudiante de la fundación semillas y poder visualizar las gráficas respectivas de cada diplomado en específico. El gran desafío con este menú fue ponerlo al lado izquierdo del contenido principal, al mismo tiempo cuando está en el dispositivo mobile, este se esconde y se despliega solamente cuando se da clic al icono hamburguesa desarrollado con CSS vainilla. La forma que logre solucionar fue poner en un contenedor general todo el contenido principal y darle una posición para lograr moverlo en relación a la ventana del navegador al lado derecho y con tamaño de ancho proporcionado en distintas resoluciones de cada dispositivo para que se acoplen.
+
+Nota: Gracias al input de tipo check box con ID respetivo se logra desarrollar la función de esconder o llamar su hermano más cercano, en este caso es el menú. De igual manera, dentro de label con atributo for s referecnia para realizar la rspectiva conexión al ID del input necesario.
+
+> Desktop y Tablet
+
+![image](https://user-images.githubusercontent.com/80645321/199147577-b4acae72-ebc4-475a-979a-cb051c045d18.png)
+
+> Mobile 
+
+![image](https://user-images.githubusercontent.com/80645321/199147784-ad2e9203-3759-4d81-8255-5de1d748e96e.png)
+
+
+
 # Sesion Edward
 a mi me toco la parte de hacer una torta con porcentaje y un diagramas de barras  el cual al inicio resulto un poco complicado pero gracias a la ayuda de mis compañeros de logro realizar 
 ### torta de porcentaje 
