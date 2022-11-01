@@ -172,6 +172,129 @@ En esta parte del código referencia el header del dashboard que abarca un input
 
 ![image](https://user-images.githubusercontent.com/80645321/199153748-218a890a-2e72-455a-8dca-26e828e1c0de.png)
 
+>Nota: Se le agregó una pequeña animación la cual se escala menos de su tamaño real cuando el cursor pasa encima de él.
+```
+ .user:hover {
+    transform: scale(0.8);
+    transition: 2000ms;
+  }
+
+  .user:hover .iconUserHead,
+  .user:hover .iconUserBody {
+    background-color: #009458;
+  }
+```
+
+## Main Sección tarjetas 🔗🔗
+```
+ <!-- Start Sección Bienvenida -->
+  <div class="welcome">
+  <!-- Seccion de foto del estudiante -->
+    <section class="photoStudent">
+      Imagen del estudiante'
+    </section>
+    <!-- Seccion de la descripción de Bienvenida -->
+    <section class="description">
+     'Descripcion sobre las graficas a visaulizar'
+    </section>
+   </div>
+  <!-- End Sección Bienvenida -->
+  <!-- Start Sección Diplomados -->
+   <div class="agreeContainer">
+    <!-- Seccion primera tarjeta -->
+      <a href="">
+       <div class="agree active">
+        'Tarjetas sobre los disferentes diplomados a escoger'
+       </div>
+      </a> 
+   </div>
+<!-- End Sección Diplomados -->
+```
+```
+/* Seccion Bienvenida */
+.welcome {
+  margin: 6.25rem 0 1.9rem 0;
+  padding: 0.62rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+```
+
+Esta parte del código abarca una pequeña descripción y tarjetas con la funcionalidad de poder escoger sobre los diplomados respectivos del estudiante, Cada tarjeta tiene información relevante. Su única funcionalidad es ordenarse en filas, es decir, una debajo de otra a la hora de visualizarse en resoluciones menores a 1024px. ya que, mayores a esta resolución se ordenan en columna, es decir, una al lado de otra. 
+
+![image](https://user-images.githubusercontent.com/80645321/199155931-0519e88d-9c85-44b6-901c-20ffa6706a3c.png)
+
+```
+<!-- Strat sección gráfica media luna -->
+ <div class="stateOfMind">
+   <section class="titleState">
+     'Titulo principal'
+   </section>
+   <div class="graphContainer">
+    <section class="graphCircle happy">
+      'Grafica con su titulo'
+    </section>
+   </div>
+ </div>
+```
+En esta parte del código se desarrolló las grafica media luna para visualizar el porcentaje general en un diplomado respectivo, esto se logró realizar con la ayuda de los gradientes y rotaciones para obtener lo esperado de una gráfica circular o media luna. Su única funcionalidad es ordenarse en filas, es decir, una debajo de otra a la hora de visualizarse en resoluciones menores a 1024px. ya que, mayores a esta resolución se ordenan en columna, es decir, una al lado de otra. 
+
+## Mian Grafica Lunar o Circular 🔘🔘
+```
+/* Gráfica media luna */
+.graphContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.graphContainer > .graphCircle {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  margin: 1rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Color Circulo principal */
+.graphContainer > .happy {
+  background: linear-gradient(125deg, #ff8a00 50%, #000000 50%);
+}
+
+.graphContainer > .indifferent {
+  background: linear-gradient(90deg, #ff0000 50%, #000000 50%);
+}
+
+.graphContainer > .sad {
+  background: linear-gradient(45deg, #001aff 50%, #000000 50%);
+}
+
+.graphCircle > .circle {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+
+/* Circulo Externo o principal */
+.graphCircle > .circleOuter {
+  padding: 1em;
+  box-sizing: border-box;
+  background: #ffffff content-box;
+}
+
+/* Circulo interno */
+.graphCircle > .circleInner {
+  background: linear-gradient(transparent 50%, #ffffff 50%);
+  transform: scale(1.1);
+}
+```
+![image](https://user-images.githubusercontent.com/80645321/199156424-f967a083-a37e-426d-aadf-3943e5e6e54a.png)
 
 
 # Sesion Edward
