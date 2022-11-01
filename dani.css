@@ -328,8 +328,7 @@ border-width: 2px;
   width:100% !important;
   }
 .verdeD, .rojoD, .amarilloD, .blancoD
-{ margin-left: 15%;
-  display: flex;
+{ display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
@@ -425,6 +424,9 @@ border-width: 2px;
   .tituloGrafica{
     font-size: clamp(1.7rem, 2vw,1.6rem);
   }
+  #tortasDani h4,#tortasDani p, #linealDani p,#linealDani h3{
+    font-size: clamp(1.3rem, 2vw,1.4rem);
+  }
   .carita {
     transition: transform 250ms;
   }
@@ -449,6 +451,9 @@ border-width: 2px;
 
 /*Inicio Media querys*/
 @media only screen and (min-width: 480px) and (max-width: 769px) {
+  #tortasDani h4,#tortasDani p, #linealDani p,#linealDani h3{
+    font-size: clamp(3rem, 2vw,3.5rem);
+  }
 .tabletD{
   display: flex;
   flex-direction: row;
@@ -667,12 +672,11 @@ border-width: 3px;
   border-radius: 0 0 10px 10px;
 
 }
-
 .boquitaA{
-
   width: 25px; 
   height: 15px; 
   -moz-border-radius: 0 0 20px 20px;
   border-radius: 0  0 20px 20px ;
 }
+
 }
