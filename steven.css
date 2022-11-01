@@ -414,11 +414,44 @@ main {
   padding: 0.5rem 0.75rem;
 }
 
+/* Animación para el titulo */
+.description > h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: writer 3s steps(50) normal both;
+}
+
+@keyframes writer {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12em;
+  }
+}
+
 .description > h2,
 .stateOfMind > .titleState > h1 {
   font-size: clamp(1.8rem, 5vw, 3.2rem);
   text-transform: capitalize;
   text-align: center;
+}
+
+/* Animación para el titulo */
+.stateOfMind > .titleState > h1 {
+  animation: slidein 3s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 150%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .description > p {
@@ -448,6 +481,12 @@ main {
   border: 5px solid #000000;
   border-radius: 2rem;
   text-align: center;
+}
+
+.agreeContainer > a > .agree:hover{
+  border: 5px solid #009458;
+  background-color: rgba(105, 191, 151, 0.8);
+  transition: all 1s;
 }
 
 .agreeContainer > a > .active {
@@ -505,21 +544,64 @@ main {
   margin: 1rem;
   border-radius: 50%;
   z-index: 1;
-
 }
 
-/* Color Circulo principal */
+/* Animación para el relleno de las graficas media luna */
+/* Graficas feliz */
 .graphContainer > .happy {
-  background: linear-gradient(125deg, #ff8a00 50%, #000000 50%);
-  
+  animation: rotate 2s normal forwards;
 }
 
+@keyframes rotate {
+  0% {
+    background: linear-gradient(0deg, #ff8a00 50%, #000000 50%);
+  }
+
+  25% {
+    background: linear-gradient(25deg, #ff8a00 50%, #000000 50%);
+  }
+
+  75% {
+    background: linear-gradient(100deg, #ff8a00 50%, #000000 50%);
+  }
+
+  100% {
+    background: linear-gradient(125deg, #ff8a00 50%, #000000 50%);
+  }
+}
+
+/* Graficas indiferente */
 .graphContainer > .indifferent {
-  background: linear-gradient(90deg, #ff0000 50%, #000000 50%);
+  animation: rotate1 2s normal forwards;
 }
 
+@keyframes rotate1 {
+  0% {
+    background: linear-gradient(0deg, #ff0000 50%, #000000 50%);
+  }
+  
+  75% {
+    background: linear-gradient(60deg, #ff0000 50%, #000000 50%);
+  }
+  
+  100% {
+    background: linear-gradient(90deg, #ff0000 50%, #000000 50%);
+  }
+}
+
+/* Graficas triste */
 .graphContainer > .sad {
-  background: linear-gradient(45deg, #001aff 50%, #000000 50%);
+  animation: rotate2 2s normal forwards;
+}
+
+@keyframes rotate2 {
+  0% {
+    background: linear-gradient(0deg, #001aff 50%, #000000 50%);
+  }
+
+  100% {
+    background: linear-gradient(45deg, #001aff 50%, #000000 50%);
+  }
 }
 
 .graphCircle > .circle {
@@ -580,7 +662,7 @@ main {
   .popUp {
     right: 4rem;
   }
-   
+
   /* Icono x */
   .containerX {
     left: 88%;
