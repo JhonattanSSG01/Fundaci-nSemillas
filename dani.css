@@ -1,7 +1,5 @@
-.tituloGrafica,
-#tortasDani h1, 
-#tortasDani h2,
-#tortasDani h3 {
+#tortasDani h1,.tituloGrafica,#tortasDani h3{
+  font-family: "Dosis", sans-serif;
   margin-block-start: -0.25em;
   margin-block-end: -0.25em;
   text-align: center;
@@ -9,6 +7,7 @@
 
 #tortasDani h4,
 #tortasDani p {
+  font-family: "Playfair Display", serif;
   margin-block-start: -0.25em;
   margin-block-end: -0.125em;
   text-align: left;
@@ -17,182 +16,168 @@
 /* Steven */
 /* Edwar */
 
-/* Daniela */
-
 /* Inicio Grafica Lineal */
-#linealDani {
-  display: flex;
-  flex-direction: column;
-}
-.lineaSuperior {
-  box-shadow: inset 0 15px 0 0 #009458;
-  opacity: 0.3;
-  max-width: 100%;
-  height: 15px;
-}
-#linealDani .tituloGrafica {
-  margin-top: 2%;
-  margin-bottom: 5%;
-}
-#verticalD {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-}
-.varVerticalD {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  margin-left: 5%;
-}
-.espacioGraficaD {
-  display: flex;
-  flex-direction: row;
-  align-items: space-around;
-  justify-content: left;
-}
-.contenD {
-  display: grid;
-  grid-template-columns: 16% 16% 16% 16% 16% 16%;
-  grid-template-rows: 50% 50%;
-  width: 282px;
-}
-.horizontal {
-  max-width: 100%;
-  height: 100%;
-}
-.asciende {
-  width: 200%;
-  height: 2px;
-  background: red;
-  transform: rotate(-70deg);
-  align-self: center;
-  margin-left: -35%;
-}
-.asciendeD3 {
-  margin-top: 52%;
-  margin-left: -25%;
+  #linealDani{
+    display: flex;
+    flex-direction: column;
 
-  width: 150%;
-  height: 2px;
-  background: red;
-  transform: rotate(-45deg);
-  margin-top: 52%;
-  margin-left: -25%;
-}
-.asciendeD4 {
-  width: 210%;
-  height: 2px;
-  background: red;
-  transform: rotate(-50deg);
-  align-self: center;
-  margin-top: 40%;
-  margin-left: -35%;
-}
+  }
+.lineaSuperior{
+    box-shadow: inset 0 15px 0 0 #009458;
+    opacity:0.3;
+    max-width: 100%;
+    height: 15px;
+  }
+  #linealDani .tituloGrafica{
+    margin-top: 2%;
+    margin-bottom:5%;
+  }
+  #verticalD{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
 
-.horizontalB1 {
-  height: 2px;
-  background: red;
+  }
+  .varVerticalD{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-left: 5%;
+  }
+  .espacioGraficaD{
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content:left;
+    
+
+  }
+  .contenD{
+      display: grid;
+      grid-template-columns: 16% 16% 16% 16% 16% 16%;
+      grid-template-rows: 50% 50%;
+      width: 80%;
+  }
+
+  .m21{
+    margin-bottom: 5px;
+    border-bottom-style:dotted;
+    border-color: #009458;
+    border-width: 15px;
+    width: 100%;
+    height: 1px;
+    align-self: end;
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+.m11{
+  margin-top: 15px;
+  border-bottom-style:dotted;
+  border-color: #009458;
+  border-width: 15px;
   width: 100%;
-}
-
-.horizontalB2 {
-  height: 2px;
-  background: red;
-  width: 105%;
-}
-.desciende {
-  width: 150%;
-  height: 2px;
-  background: red;
-  transform: rotate(45deg);
-  margin-top: 52%;
-  margin-left: -25%;
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.a1 {
+  height: 1px;
   grid-column: 1;
   grid-row: 2;
+
 }
-.d1 {
+.m12{
+  border-bottom-style:dotted;
+  border-color: #009458;
+  border-width: 15px;
+  width: 100%;
+  height: 1px;
   grid-column: 2;
   grid-row: 1;
 }
-.d2 {
-  grid-column: 2;
-  grid-row: 2;
-}
-.a2 {
+.a2{
+  border-bottom-style: dotted;
+  border-color: black;
+  border-width: 5px;
   grid-column: 3;
   grid-row: 1;
 }
-.a3 {
+.m22{
+  border-bottom-style:dotted;
+  border-color: #009458;
+  border-width: 15px;
+  width: 100%;
+  height: 1px;
   grid-column: 4;
   grid-row: 2;
 }
-.d3 {
+
+.m31{
+  border-top-style:dotted;
+  border-color: #009458;
+  border-width: 15px;
+  width: 100%;
+  margin-top: 50px;
   grid-column: 5;
   grid-row: 1;
 }
-.d4 {
-  grid-column: 5;
-  grid-row: 2;
-}
-.a4 {
+.m32{
+  margin-top: 15%;
+  border-bottom-style:dotted;
+  border-color: #009458;
+  border-width: 15px;
+  width: 100%;
+  height: 1px;
   grid-column: 6;
   grid-row: 1;
 }
-.d5 {
-  grid-column: 6;
+.d5{
+
+    grid-column: 6;
   grid-row: 2;
   width: 0;
   height: 0;
-  border-right: 3px solid transparent;
+  border-right: 3px solid transparent ;
   border-top: 3px solid red;
-  border-left: 3px solid red;
+  border-left: 3px solid red ;
   border-bottom: 3px solid transparent;
 }
 
-/*Emocion*/
+  /*Emocion*/
 
-.intermedia {
+.intermedia{
   width: 25px;
-  height: 25px;
+  height:25px;
 }
-#abajoD {
+#abajoD{
   display: flex;
   flex-direction: row;
   justify-content: left;
   margin-left: 5%;
 }
-.cuadritoD {
+.cuadritoD{
   background: white;
   width: 30px;
 }
-.cuadritoD2 {
+.cuadritoD2{
   background: white;
   width: 15px;
 }
 
-#textoHorizontalD {
+#textoHorizontalD{
   margin-top: 5%;
   display: flex;
   flex-direction: row;
   border-top-style: solid;
   border-width: 3px;
-  width: 70%;
+  width: 85%;
   justify-content: space-around;
+
 }
-#textoHorizontalD h3 {
-  margin-block-start: 0.3em;
+#textoHorizontalD h3{
+  margin-block-start: 0.30em;
 }
 
-.carita {
+.carita{
   width: 25px;
-  height: 25px;
+  height:25px;
   border-radius: 50%;
   background: black;
   display: flex;
@@ -200,33 +185,31 @@
   align-items: center;
 }
 
-.cutis {
+.cutis{
   width: 22px;
-  height: 22px;
+  height:22px;
   border-radius: 50%;
   background: white;
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  
 }
-.ojitos {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10%;
-  justify-content: space-evenly !important;
+.ojitos{
+display:flex;
+flex-direction:row;
+margin-top:10%;
+justify-content: space-evenly !important;
+
 }
 
-.ojo {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
+.ojo{width:4px;height:4px;border-radius:50%; background:black;}
+.boquitat{
+  margin-top:1%;
   background: black;
-}
-.boquitat {
-  margin-top: 1%;
-  background: black;
-  width: 12px;
-  height: 5px;
+  width: 12px; 
+  height: 5px; 
   -moz-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
   align-self: center;
@@ -234,346 +217,451 @@
   justify-content: center;
 }
 
-.boquitat1 {
+.boquitat1{
   margin-top: 13%;
   background: white;
-  width: 9px;
-  height: 4px;
+  width: 9px; 
+  height: 4px; 
   -moz-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
   align-self: center;
 }
-.boquitaN {
+.boquitaN
+{
   margin-left: 20%;
-  max-width: 60%;
-  border-bottom-style: solid;
-  border-width: 2px;
+max-width: 60%;
+border-bottom-style: solid;
+border-width: 2px;
+
 }
-.boquitaf {
-  margin-top: 1%;
+.boquitaf{
+  margin-top:1%;
   background: black;
-  width: 12px;
-  height: 6px;
+  width: 12px; 
+  height: 6px; 
   -moz-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0  0 10px 10px ;
   align-self: center;
   display: flex;
   justify-content: center;
 }
 
-.boquitaf1 {
+.boquitaf1{
   margin-top: -1px;
   background: white;
-  width: 9px;
-  height: 8px;
-  -moz-border-radius: 0 0 10px 10px;
+  width: 9px; 
+  height: 8px; 
+  -moz-border-radius:  0 0 10px 10px;
   border-radius: 0 0 10px 10px;
   align-self: center;
 }
 
-.boquitaA {
-  margin-top: 1%;
+.boquitaA{
+  margin-top:1%;
   background: black;
-  width: 12px;
-  height: 7px;
+  width: 12px; 
+  height: 7px; 
   -moz-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0  0 10px 10px ;
   align-self: center;
   display: flex;
   justify-content: center;
 }
 
-/* Fin Grafica Lineal */
 
-/* Inicio TortasDani */
+  /* Fin Grafica Lineal */
 
-#tortasDani .lineaSuperior {
-  height: 10px;
-  border-style: solid;
-  border-color: #009458;
-  opacity: 0.3;
-  margin-top: 5%;
-  width: 100%;
-}
-#tortasDani {
+  /* Inicio TortasDani */
+
+  #tortasDani .lineaSuperior{
+    height: 10px;
+    border-style: solid;
+    border-color: #009458;
+    opacity:0.3;
+    margin-top: 5%;
+    width: 100%;
+
+  }
+  #tortasDani{
   margin: 0%;
   padding: 0%;
   display: flex;
   flex-direction: column;
-}
-#tortasDani .tituloGrafica {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-#clasesD {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  }
+  #tortasDani .tituloGrafica{
+    margin-top: 5%;
+    margin-bottom:5%;
+  }
+  #clasesD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.clase {
-  display: flex;
+.clase{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  #contenedorPorcentajesD{
+  display: flex; 
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: space-between;
-}
-#contenedorPorcentajesD {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: space-between;
-  width: 100% !important;
-}
-.verdeD,
-.rojoD,
-.amarilloD,
-.blancoD {
-  display: flex;
+  width:100% !important;
+  }
+.verdeD, .rojoD, .amarilloD, .blancoD
+{ display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
-}
-.verdeD .circulo {
-  margin-top: 5px;
-  width: 25px;
-  height: 25px;
-  background: #44bb0c;
-  border-radius: 50%;
-}
-.amarilloD .circulo {
-  margin-top: 5px;
-  width: 25px;
-  height: 25px;
-  background: #f4f858;
-  border-radius: 50%;
-}
-.rojoD .circulo {
-  margin-top: 5px;
-  width: 25px;
-  height: 25px;
-  background: #ff0c0c;
-  border-radius: 50%;
-}
-.blancoD .circulo {
-  width: 5px;
-  height: 5px;
-  background: white;
-  border-radius: 50%;
-}
-.blancoD h4 {
-  color: white;
-}
 
-.contenedorTortaD {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
 }
+.verdeD .circulo{margin-top:5px;width: 25px;height: 25px;background: #44BB0C;border-radius: 50%;}
+.amarilloD .circulo{margin-top:5px;width: 25px;height: 25px;background: #F4F858;border-radius: 50%;}
+.rojoD .circulo{margin-top:5px;width: 25px;height: 25px;background: #FF0C0C;border-radius: 50%;}
+.blancoD .circulo{width: 5px;height: 5px;background: white;border-radius: 50%;}
+.blancoD h4{color: white;}
 
-div.contenedorCD {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 140px;
-  height: 140px;
-  background: #d9d9d9;
-  border-radius: 50%;
-}
 
-#tortasDani.div.textoIntD {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.circuloExteriorD1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 175px;
-  height: 175px;
-  background: #ff0c0c;
-  border-radius: 50%;
-  margin: auto;
-  overflow: hidden;
-  background-image: linear-gradient(
-      50deg,
-      #44bb0c,
-      #44bb0c 50%,
-      transparent 10.1%,
-      transparent 100%
-    ),
-    linear-gradient(
-      30deg,
-      #f4f858,
-      #f4f858 49.9%,
-      transparent 50.1%,
-      transparent 100%
-    ),
-    linear-gradient(
-      190deg,
-      #44bb0c,
-      #44bb0c 50%,
-      transparent 10.1%,
-      transparent 100%
-    );
-}
-.circuloExteriorD2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 175px;
-  height: 175px;
-  background: #f4f858;
-  border-radius: 50%;
-  margin: auto;
-  overflow: hidden;
-  background-image: linear-gradient(
-      -90deg,
-      #44bb0c,
-      #44bb0c 50%,
-      transparent 10.1%,
-      transparent 100%
-    ),
-    linear-gradient(
-      0deg,
-      #44bb0c,
-      #44bb0c 50%,
-      transparent 10.1%,
-      transparent 100%
-    );
-}
-.circuloExteriorD3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 175px;
-  height: 175px;
-  background: #ff0c0c;
-  border-radius: 50%;
-  margin: auto;
-  overflow: hidden;
-  background-image: linear-gradient(
-    90deg,
-    #f4f858,
-    #f4f858 49.9%,
-    transparent 50.1%,
-    transparent 100%
-  );
-}
-.circuloExteriorD4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 175px;
-  height: 175px;
-  background: #44bb0c;
-  border-radius: 50%;
-  margin: auto;
-  overflow: hidden;
-  background-image: linear-gradient(
-      45deg,
-      #ff0c0c,
-      #ff0c0c 40%,
-      transparent 10.1%,
-      transparent 100%
-    ),
-    linear-gradient(
-      -45deg,
-      #ff0c0c,
-      #ff0c0c 40%,
-      transparent 10.1%,
-      transparent 100%
-    );
-}
-/* Fin TortasDani */
 
-/*Inicio Media querys*/
-@media only screen and (min-width: 480px) {
-  .tabletD {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-  }
-  #textoHorizontalD {
-    margin-top: 5%;
-    width: 80%;
-  }
-  .contenD {
-    width: 85%;
-  }
-  .asciende {
-    width: 100px;
-    transform: rotate(-62deg);
-    margin-top: -2px;
-    margin-left: 0.5px;
-  }
-  .asciendeD3 {
-    width: 100px;
-    transform: rotate(-47deg);
-    margin-top: 36px;
-    margin-left: -15px;
-  }
-  .asciendeD4 {
-    width: 100px;
-    background: red;
-    transform: rotate(-65deg);
-    margin-top: -1px;
-    margin-left: -24px;
-  }
-  .desciende {
-    width: 105px;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .tabletD {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-  }
-  #clasesD {
+  .contenedorTortaD{
     display: flex;
     flex-direction: column;
-    align-items: space-evenly;
-    width: 100%;
+    align-items:center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;   
   }
+
+
+  div.contenedorCD{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+  background: #D9D9D9;  
+    border-radius: 50%;
+  }
+
+  #tortasDani.div.textoIntD{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+  .circuloExteriorD1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    width: 175px;
+    height: 175px;
+    background: #FF0C0C;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+    background-image: linear-gradient(50deg, #44BB0C, #44BB0C 50.0%, transparent 10.1%, transparent 100%), linear-gradient(30deg, #F4F858, #F4F858 49.9%, transparent 50.1%, transparent 100%),linear-gradient(190deg, #44BB0C, #44BB0C 50.0%, transparent 10.1%, transparent 100%); 
+  }
+  .circuloExteriorD2{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    width: 175px;
+    height: 175px;
+    background: #F4F858;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+    background-image: linear-gradient(-90deg, #44BB0C, #44BB0C 50.0%, transparent 10.1%, transparent 100%),linear-gradient(0deg, #44BB0C, #44BB0C 50.0%, transparent 10.1%, transparent 100%);
+  }
+  .circuloExteriorD3{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    width: 175px;
+    height: 175px;
+    background: #FF0C0C;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+    background-image:  linear-gradient(90deg, #F4F858, #F4F858 49.9%, transparent 50.1%, transparent 100%);
+  }
+  .circuloExteriorD4{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    width: 175px;
+    height: 175px;
+    background: #44BB0C;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #FF0C0C, #FF0C0C 40.0%, transparent 10.1%, transparent 100%),linear-gradient(-45deg, #FF0C0C, #FF0C0C 40.0%, transparent 10.1%, transparent 100%); 
+  }
+  .tituloGrafica{
+    font-size: clamp(1.7rem, 2vw,1.6rem);
+  }
+  #tortasDani h4,#tortasDani p, #linealDani p,#linealDani h3{
+    font-size: clamp(1.3rem, 2vw,1.4rem);
+  }
+  .carita {
+    transition: transform 250ms;
+  }
+  
+  .carita:hover {
+    transform: translateX(10px);
+  }
+  
+  .cutis:hover .boquitat1 {
+    background:#F4F858;
+  }
+  .cutis:hover .boquitaf1 {
+    background:#F4F858;
+  }
+  .cutis:hover{
+    background:#F4F858;
+  }
+
+  /* Fin TortasDani */
+
+
+
+/*Inicio Media querys*/
+@media only screen and (min-width: 480px) and (max-width: 769px) {
+  #tortasDani h4,#tortasDani p, #linealDani p,#linealDani h3{
+    font-size: clamp(3rem, 2vw,3.5rem);
+  }
+.tabletD{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+#textoHorizontalD{
+  margin-top: 5%;
+  width: 80%;
+
+}
+.contenD{
+  width: 80%;
+}
+.tituloGrafica{
+  font-size: clamp(2.3rem, 2vw,1.6rem);
+}
+.carita{
+  width: 50px;
+  height:50px;
+}
+.cutis{
+  width: 45px;
+  height:45px;
+}
+.cuadritoD{width:55px;}
+.ojo{width:8px;height:8px;}
+.boquitat{
+  width: 22px; 
+  height: 10px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.boquitat1{
+  width: 18px; 
+  height: 8px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  align-self: center;
+}
+.boquitaN
+{
+border-width: 3px;
+
+}
+.boquitaf{
+
+  width: 25px; 
+  height: 10px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+
+}
+
+.boquitaf1{
+
+  width: 18px; 
+  height: 10px; 
+  -moz-border-radius:  0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.boquitaA{
+
+  width: 25px; 
+  height: 15px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+}
+}
+@media only screen and (min-width: 769px)  and (max-width: 1024px) {
+  .tabletD{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  
+  }
+  #clasesD{
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+  width: 100%;
+}
+.tituloGrafica{
+  font-size: clamp(3rem, 2vw,1.6rem);
+}
+.carita{
+  width: 50px;
+  height:50px;
+}
+.carita {
+  transition: transform 250ms;
+}
+.cutis{
+  width: 45px;
+  height:45px;
+}
+.cuadritoD{width:55px;}
+.ojo{width:8px;height:8px;}
+.boquitat{
+  width: 22px; 
+  height: 10px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.boquitat1{
+  width: 18px; 
+  height: 8px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  align-self: center;
+}
+.boquitaN
+{
+border-width: 3px;
+
+}
+.boquitaf{
+
+  width: 25px; 
+  height: 10px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+
+}
+
+.boquitaf1{
+
+  width: 18px; 
+  height: 10px; 
+  -moz-border-radius:  0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.boquitaA{
+
+  width: 25px; 
+  height: 15px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+}
+
 }
 @media only screen and (min-width: 1025px) {
-  .tabletD {
+  .tabletD{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  
+  }
+  
+  .tabletD{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
   }
+  #clasesD{
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+  width: 100%;
+}
+.tituloGrafica{
+  font-size: clamp(4rem, 2vw,1.6rem);
+}
+.carita{
+  width: 50px;
+  height:50px;
+}
+.cutis{
+  width: 45px;
+  height:45px;
+}
+.cuadritoD{width:55px;}
+.ojo{width:8px;height:8px;}
+.boquitat{
+  width: 22px; 
+  height: 10px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
 
-  .tabletD {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-  }
-  #clasesD {
-    display: flex;
-    flex-direction: row;
-    align-items: space-evenly;
-    width: 100%;
-  }
+.boquitat1{
+  width: 18px; 
+  height: 8px; 
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  align-self: center;
+}
+.boquitaN
+{
+border-width: 3px;
 
-  .contenD {
-    display: grid;
-    grid-template-columns: 16% 16% 16% 16% 16% 16%;
-    grid-template-rows: 50% 50%;
-    width: 70%;
-  }
+}
+.boquitaf{
+
+  width: 25px; 
+  height: 10px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+
+}
+
+.boquitaf1{
+
+  width: 18px; 
+  height: 10px; 
+  -moz-border-radius:  0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+
+}
+.boquitaA{
+  width: 25px; 
+  height: 15px; 
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0  0 20px 20px ;
+}
+
 }
