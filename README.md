@@ -341,3 +341,15 @@ En cuanto a estas gráficas lo que representan es un acumulado de actividades po
 
 La ejecución se realizó a través de flexbox y superposiciones. Los colores fueron logrados acomodando gradientes de color con grados y porcentaje de ocupación que era paralelo al diametro del circulo. En este diseño no hay animaciones. 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# **Nota: Cambios en el diseño de Todas las secciones** 💢💢💢
+
+>Se obvió la realización de iconos como el de la edición en el perfil de estudiante, el de cerrar sesión y el de guardar cambios, por lo que, no se consideraron fundamentales para el cumplimiento de los requerimientos. 
+Se quitó el despliegue del menú Search, ya que, no era prioritario frente a otros requerimientos que determinaban desarrollos más importantes. 
+
+>## Gráficas 〽〽
+>Las gráfica de líneas cambio por una punteada representando la misma información que se pretendía, por dificultad en el trabajo de representar una grafica así solo usando css, dado que los resultados no eran responsivos. Se intentó con triángulos formados con especificaciones de bordes de flexbox, un flex superpuesto sobre el otro, pero la visualización mostraba detalles no continuos. En cuanto al uso de transformaciones, la inclinación era constante y no funcionaba para unir las lineaas inclinadas a medida que cambiaba el tamaño de imagen. Intenté realizarlo mediante operaciones, pero incluían el width y el heigh  actual de un compartimento del grid, como no sabia si esto era posible en css y pensando en mi tasa de aprendizaje y el corto tiempo que quedaba, probar con la posibilidad de que no funcionara no era una opción. Por lo que se decidió dejar la representación expuesta. 
+
+>## Diseño en Mobile 📱📱
+>En el mobile, se decidió dejar solamente el título, la foto y el profesor, quitando solo el horario y la descripción para una mejor facilidad al hacer el scrolling.
